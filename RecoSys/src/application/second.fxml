@@ -23,7 +23,7 @@
             <Font size="14.0" />
          </font>
       </Button>
-      <Button layoutX="366.0" layoutY="428.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="111.0" text="Browse Items" onAction="#BrowseButtonAction">
+      <Button layoutX="366.0" layoutY="428.0" mnemonicParsing="false" onAction="#BrowseButtonAction" prefHeight="34.0" prefWidth="111.0" text="Browse Items">
          <font>
             <Font size="14.0" />
          </font>

@@ -82,6 +82,15 @@
                               </ImageView>
                            </children>
                         </VBox>
+                        <VBox prefHeight="146.0" prefWidth="131.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <children>
+                              <RadioButton contentDisplay="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="92.0" text="BasketBall">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="2.0" />
+                                 </VBox.margin>
+                              </RadioButton>
+                           </children>
+                        </VBox>
                      </children>
                   </GridPane>
                </children>
