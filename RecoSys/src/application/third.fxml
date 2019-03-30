@@ -16,7 +16,7 @@
         <content>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="585.0" prefWidth="701.0">
                <children>
-                  <GridPane gridLinesVisible="true" layoutY="20.0" prefHeight="452.0" prefWidth="684.0">
+                  <GridPane layoutY="20.0" prefHeight="452.0" prefWidth="684.0">
                     <columnConstraints>
                       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -317,5 +317,6 @@
             <Font size="15.0" />
          </font>
       </Label>
+      <Button layoutX="620.0" layoutY="12.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="57.0" text="Done" />
    </children>
 </AnchorPane>
