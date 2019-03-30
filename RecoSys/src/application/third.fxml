@@ -49,14 +49,31 @@
                         </VBox>
                         <VBox prefHeight="146.0" prefWidth="131.0" GridPane.columnIndex="1">
                            <children>
-                              <RadioButton contentDisplay="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="92.0" text="Bucket">
+                              <RadioButton contentDisplay="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="108.0" text="Women shoes">
                                  <VBox.margin>
                                     <Insets left="10.0" top="2.0" />
                                  </VBox.margin>
                               </RadioButton>
-                              <ImageView fitHeight="103.0" fitWidth="91.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fitHeight="74.0" fitWidth="98.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true" scaleY="1.1">
                                  <image>
-                                    <Image url="@../../images/bucket.png" />
+                                    <Image url="@../../images/women_shoes.png" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" left="30.0" right="10.0" top="20.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="146.0" prefWidth="131.0" GridPane.rowIndex="1">
+                           <children>
+                              <RadioButton contentDisplay="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="92.0" text="T-Shirt">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="2.0" />
+                                 </VBox.margin>
+                              </RadioButton>
+                              <ImageView fitHeight="117.0" fitWidth="91.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/tshirt.png" />
                                  </image>
                                  <VBox.margin>
                                     <Insets bottom="10.0" left="30.0" right="10.0" top="10.0" />
