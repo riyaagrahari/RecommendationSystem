@@ -43,4 +43,20 @@ public class WelcomeController {
 	        window.setScene(scene1);
 	        window.show();
 }
+    public void BrowseButtonAction(ActionEvent event) {
+        //Window owner = logout.getScene().getWindow();
+        Parent root1 = null;
+        FXMLLoader loader2 = null;
+		try {
+			  loader2 = new FXMLLoader(getClass().getResource("third.fxml"));
+			  root1 = loader2.load();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}/* Exception */
+		 Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+	        Scene scene1 = new Scene(root1);
+	        window.setScene(scene1);
+	        window.show();
+}  
 }
