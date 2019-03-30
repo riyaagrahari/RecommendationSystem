@@ -17,9 +17,9 @@ import javafx.stage.Stage;
 public class BrowseController {
 	
 	private Button doneButton;
-	private RadioButton rb1 = new RadioButton("Shoes");
-	private RadioButton rb2 = new RadioButton("Shoes");
-	private RadioButton rb3 = new RadioButton("Shoes");
+//	private RadioButton rb1;
+//	private RadioButton rb2;
+//	private RadioButton rb3;
 	final ToggleGroup group = new ToggleGroup();
 	
 	@FXML
@@ -42,8 +42,8 @@ public class BrowseController {
 }
 	@FXML
 	protected void RadioClickAction(ActionEvent event) {
-		rb1.setToggleGroup(group);
-		rb2.setToggleGroup(group);
-		rb3.setToggleGroup(group);
+//		rb1.setToggleGroup(group);
+//		rb2.setToggleGroup(group);
+//		rb3.setToggleGroup(group);
 }
 }
