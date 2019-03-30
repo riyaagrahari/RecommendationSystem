@@ -9,8 +9,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="534.0" prefWidth="705.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+<AnchorPane prefHeight="534.0" prefWidth="705.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <VBox layoutX="-89.0" layoutY="-190.0" prefHeight="200.0" prefWidth="100.0" />
       <ScrollPane layoutY="43.0" prefHeight="491.0" prefWidth="705.0">
@@ -82,6 +81,7 @@
                               </ImageView>
                            </children>
                         </VBox>
+<<<<<<< HEAD
                         <VBox prefHeight="146.0" prefWidth="131.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
                            <children>
                               <RadioButton contentDisplay="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="92.0" text="BasketBall">
@@ -89,6 +89,40 @@
                                     <Insets left="10.0" top="2.0" />
                                  </VBox.margin>
                               </RadioButton>
+=======
+                        <VBox prefHeight="146.0" prefWidth="131.0" GridPane.columnIndex="3">
+                           <children>
+                              <RadioButton contentDisplay="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="92.0" text="Tie">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="2.0" />
+                                 </VBox.margin>
+                              </RadioButton>
+                              <ImageView fitHeight="116.0" fitWidth="135.0" pickOnBounds="true" preserveRatio="true" scaleX="1.2">
+                                 <image>
+                                    <Image url="@../../images/tie.png" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" left="50.0" right="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="146.0" prefWidth="131.0" GridPane.columnIndex="4">
+                           <children>
+                              <RadioButton contentDisplay="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="92.0" text="Watch">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="2.0" />
+                                 </VBox.margin>
+                              </RadioButton>
+                              <ImageView fitHeight="116.0" fitWidth="135.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/watches.png" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" left="30.0" right="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </ImageView>
+>>>>>>> branch 'master' of https://github.com/riyaagrahari/RecommendationSystem.git
                            </children>
                         </VBox>
                      </children>
