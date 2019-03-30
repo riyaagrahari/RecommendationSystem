@@ -30,7 +30,7 @@
       </Button>
       <Label fx:id="item" layoutX="110.0" layoutY="109.0" prefHeight="17.0" prefWidth="155.0" />
       <ListView fx:id="listView" layoutX="207.0" layoutY="164.0" prefHeight="200.0" prefWidth="200.0" />
-      <Label layoutX="262.0" layoutY="126.0" text="Items Selected">
+      <Label layoutX="262.0" layoutY="126.0" text="Items in The Cart">
          <font>
             <Font size="14.0" />
          </font>
