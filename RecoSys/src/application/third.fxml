@@ -49,7 +49,7 @@
                         </VBox>
                         <VBox prefHeight="146.0" prefWidth="131.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
                            <children>
-                              <RadioButton contentDisplay="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="108.0" text="Women shoes">
+                              <RadioButton fx:id="rb14" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="108.0" text="Women shoes">
                                  <toggleGroup>
                                     <ToggleGroup fx:id="group" />
                                  </toggleGroup>
@@ -69,7 +69,7 @@
                         </VBox>
                         <VBox prefHeight="146.0" prefWidth="131.0" GridPane.rowIndex="1">
                            <children>
-                              <RadioButton contentDisplay="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="92.0" text="T-Shirt" toggleGroup="$group">
+                              <RadioButton fx:id="rb6" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="92.0" text="T-Shirt" toggleGroup="$group">
                                  <VBox.margin>
                                     <Insets left="10.0" top="2.0" />
                                  </VBox.margin>
@@ -89,7 +89,7 @@
 
                         <VBox prefHeight="146.0" prefWidth="131.0" GridPane.columnIndex="3">
                            <children>
-                              <RadioButton contentDisplay="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="92.0" text="Tie" toggleGroup="$group">
+                              <RadioButton fx:id="rb4" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="92.0" text="Tie" toggleGroup="$group">
                                  <VBox.margin>
                                     <Insets left="10.0" top="2.0" />
                                  </VBox.margin>
@@ -106,7 +106,7 @@
                         </VBox>
                         <VBox prefHeight="146.0" prefWidth="131.0" GridPane.columnIndex="4">
                            <children>
-                              <RadioButton contentDisplay="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="92.0" text="Watch" toggleGroup="$group">
+                              <RadioButton fx:id="rb5" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="92.0" text="Watch" toggleGroup="$group">
                                  <VBox.margin>
                                     <Insets left="10.0" top="2.0" />
                                  </VBox.margin>
@@ -124,7 +124,7 @@
                         </VBox>
                         <VBox prefHeight="146.0" prefWidth="131.0" GridPane.columnIndex="4" GridPane.rowIndex="1">
                            <children>
-                              <RadioButton contentDisplay="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="108.0" text="Pen" toggleGroup="$group">
+                              <RadioButton fx:id="rb10" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="108.0" text="Pen" toggleGroup="$group">
                                  <VBox.margin>
                                     <Insets left="10.0" top="2.0" />
                                  </VBox.margin>
@@ -141,7 +141,7 @@
                         </VBox>
                         <VBox prefHeight="146.0" prefWidth="131.0" GridPane.columnIndex="4" GridPane.rowIndex="2">
                            <children>
-                              <RadioButton contentDisplay="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="108.0" text="BasketBall" toggleGroup="$group">
+                              <RadioButton fx:id="rb15" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="108.0" text="BasketBall" toggleGroup="$group">
                                  <VBox.margin>
                                     <Insets left="10.0" top="2.0" />
                                  </VBox.margin>
@@ -158,7 +158,7 @@
                         </VBox>
                         <VBox prefHeight="151.0" prefWidth="109.0" GridPane.columnIndex="1">
                            <children>
-                              <RadioButton fx:id="rb2" contentDisplay="CENTER" mnemonicParsing="false" onAction="#RadioClickAction" prefHeight="17.0" prefWidth="92.0" text="Blazer" toggleGroup="$group">
+                              <RadioButton fx:id="rb2" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="92.0" text="Blazer" toggleGroup="$group">
                                  <VBox.margin>
                                     <Insets left="10.0" top="2.0" />
                                  </VBox.margin>
@@ -175,7 +175,7 @@
                         </VBox>
                         <VBox prefHeight="146.0" prefWidth="131.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
                            <children>
-                              <RadioButton contentDisplay="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="92.0" text="Headphones" toggleGroup="$group">
+                              <RadioButton fx:id="rb7" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="92.0" text="Headphones" toggleGroup="$group">
                                  <VBox.margin>
                                     <Insets left="10.0" top="2.0" />
                                  </VBox.margin>
@@ -192,7 +192,7 @@
                         </VBox>
                         <VBox prefHeight="146.0" prefWidth="131.0" GridPane.columnIndex="2">
                            <children>
-                              <RadioButton fx:id="rb3" contentDisplay="CENTER" mnemonicParsing="false" onAction="#RadioClickAction" prefHeight="17.0" prefWidth="92.0" text="Pendrive" toggleGroup="$group">
+                              <RadioButton fx:id="rb3" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="92.0" text="Pendrive" toggleGroup="$group">
                                  <VBox.margin>
                                     <Insets left="10.0" top="2.0" />
                                  </VBox.margin>
@@ -209,7 +209,7 @@
                         </VBox>
                         <VBox prefHeight="146.0" prefWidth="131.0">
                            <children>
-                              <RadioButton fx:id="rb1" contentDisplay="CENTER" mnemonicParsing="false" onAction="#RadioClickAction" prefHeight="17.0" prefWidth="92.0" text="Shoes" toggleGroup="$group">
+                              <RadioButton fx:id="rb1" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="92.0" text="Shoes" toggleGroup="$group">
                                  <VBox.margin>
                                     <Insets left="10.0" top="2.0" />
                                  </VBox.margin>
@@ -226,7 +226,7 @@
                         </VBox>
                         <VBox prefHeight="146.0" prefWidth="131.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
                            <children>
-                              <RadioButton contentDisplay="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="116.0" text="WirelessMouse" toggleGroup="$group">
+                              <RadioButton fx:id="rb8" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="116.0" text="WirelessMouse" toggleGroup="$group">
                                  <VBox.margin>
                                     <Insets left="10.0" top="2.0" />
                                  </VBox.margin>
@@ -248,7 +248,7 @@
                                     <Insets left="10.0" top="2.0" />
                                  </VBox.margin>
                               </RadioButton>
-                              <ImageView fitHeight="99.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" scaleX="1.5" scaleY="1.5">
+                              <ImageView fx:id="rb11" fitHeight="99.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" scaleX="1.5" scaleY="1.5">
                                  <image>
                                     <Image url="@../../images/laptopSkin.png" />
                                  </image>
@@ -260,7 +260,7 @@
                         </VBox>
                         <VBox prefHeight="146.0" prefWidth="131.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
                            <children>
-                              <RadioButton contentDisplay="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="92.0" text="Belt" toggleGroup="$group">
+                              <RadioButton fx:id="rb12" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="92.0" text="Belt" toggleGroup="$group">
                                  <VBox.margin>
                                     <Insets left="10.0" top="2.0" />
                                  </VBox.margin>
@@ -277,7 +277,7 @@
                         </VBox>
                         <VBox prefHeight="146.0" prefWidth="131.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
                            <children>
-                              <RadioButton contentDisplay="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="92.0" text="Socks" toggleGroup="$group">
+                              <RadioButton fx:id="rb13" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="92.0" text="Socks" toggleGroup="$group">
                                  <VBox.margin>
                                     <Insets left="10.0" top="2.0" />
                                  </VBox.margin>
@@ -294,7 +294,7 @@
                         </VBox>
                         <VBox prefHeight="146.0" prefWidth="131.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
                            <children>
-                              <RadioButton contentDisplay="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="92.0" text="Laptop" toggleGroup="$group">
+                              <RadioButton fx:id="rb9" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="92.0" text="Laptop" toggleGroup="$group">
                                  <VBox.margin>
                                     <Insets left="10.0" top="2.0" />
                                  </VBox.margin>
