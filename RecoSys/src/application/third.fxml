@@ -204,6 +204,40 @@
                               </ImageView>
                            </children>
                         </VBox>
+                        <VBox prefHeight="146.0" prefWidth="131.0">
+                           <children>
+                              <RadioButton contentDisplay="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="92.0" text="Shoes">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="2.0" />
+                                 </VBox.margin>
+                              </RadioButton>
+                              <ImageView fitHeight="116.0" fitWidth="135.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/shoeimage.png" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" left="30.0" right="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="146.0" prefWidth="131.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <children>
+                              <RadioButton contentDisplay="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="116.0" text="WirelessMouse">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="2.0" />
+                                 </VBox.margin>
+                              </RadioButton>
+                              <ImageView fitHeight="88.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/wirelessMouse.png" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" left="30.0" right="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                           </children>
+                        </VBox>
                      </children>
                   </GridPane>
                </children>
