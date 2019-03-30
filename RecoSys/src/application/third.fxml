@@ -81,15 +81,9 @@
                               </ImageView>
                            </children>
                         </VBox>
-<<<<<<< HEAD
-                        <VBox prefHeight="146.0" prefWidth="131.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
-                           <children>
-                              <RadioButton contentDisplay="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="92.0" text="BasketBall">
-                                 <VBox.margin>
-                                    <Insets left="10.0" top="2.0" />
-                                 </VBox.margin>
-                              </RadioButton>
-=======
+
+                
+
                         <VBox prefHeight="146.0" prefWidth="131.0" GridPane.columnIndex="3">
                            <children>
                               <RadioButton contentDisplay="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="92.0" text="Tie">
@@ -122,7 +116,7 @@
                                     <Insets bottom="10.0" left="30.0" right="10.0" top="10.0" />
                                  </VBox.margin>
                               </ImageView>
->>>>>>> branch 'master' of https://github.com/riyaagrahari/RecommendationSystem.git
+
                            </children>
                         </VBox>
                         <VBox prefHeight="146.0" prefWidth="131.0" GridPane.columnIndex="4" GridPane.rowIndex="1">
