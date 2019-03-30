@@ -47,7 +47,7 @@
                               </ImageView>
                            </children>
                         </VBox>
-                        <VBox prefHeight="146.0" prefWidth="131.0" GridPane.rowIndex="2">
+                        <VBox prefHeight="146.0" prefWidth="131.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
                            <children>
                               <RadioButton contentDisplay="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="108.0" text="Women shoes">
                                  <VBox.margin>
@@ -136,7 +136,7 @@
                               </ImageView>
                            </children>
                         </VBox>
-                        <VBox prefHeight="146.0" prefWidth="131.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                        <VBox prefHeight="146.0" prefWidth="131.0" GridPane.columnIndex="4" GridPane.rowIndex="2">
                            <children>
                               <RadioButton contentDisplay="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="108.0" text="BasketBall">
                                  <VBox.margin>
@@ -177,12 +177,12 @@
                                     <Insets left="10.0" top="2.0" />
                                  </VBox.margin>
                               </RadioButton>
-                              <ImageView fitHeight="105.0" fitWidth="81.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fitHeight="88.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@../../images/headphone.png" />
                                  </image>
                                  <VBox.margin>
-                                    <Insets bottom="10.0" left="30.0" right="10.0" top="10.0" />
+                                    <Insets bottom="10.0" left="30.0" right="10.0" top="20.0" />
                                  </VBox.margin>
                               </ImageView>
                            </children>
@@ -233,7 +233,75 @@
                                     <Image url="@../../images/wirelessMouse.png" />
                                  </image>
                                  <VBox.margin>
+                                    <Insets bottom="10.0" left="30.0" right="10.0" top="20.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="146.0" prefWidth="131.0" GridPane.rowIndex="2">
+                           <children>
+                              <RadioButton contentDisplay="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="92.0" text="LaptopSkin">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="2.0" />
+                                 </VBox.margin>
+                              </RadioButton>
+                              <ImageView fitHeight="112.0" fitWidth="81.0" pickOnBounds="true" preserveRatio="true" scaleX="1.5" scaleY="1.5">
+                                 <image>
+                                    <Image url="@../../images/laptopSkin.png" />
+                                 </image>
+                                 <VBox.margin>
                                     <Insets bottom="10.0" left="30.0" right="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="146.0" prefWidth="131.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <children>
+                              <RadioButton contentDisplay="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="92.0" text="Belt">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="2.0" />
+                                 </VBox.margin>
+                              </RadioButton>
+                              <ImageView fitHeight="68.0" fitWidth="101.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/belt.png" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" left="20.0" right="10.0" top="30.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="146.0" prefWidth="131.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                           <children>
+                              <RadioButton contentDisplay="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="92.0" text="Socks">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="2.0" />
+                                 </VBox.margin>
+                              </RadioButton>
+                              <ImageView fitHeight="84.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/socks.png" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" left="30.0" right="10.0" top="20.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="146.0" prefWidth="131.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                           <children>
+                              <RadioButton contentDisplay="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="92.0" text="Laptop">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="2.0" />
+                                 </VBox.margin>
+                              </RadioButton>
+                              <ImageView fitHeight="90.0" fitWidth="104.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+                                 <image>
+                                    <Image url="@../../images/laptop.png" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" left="20.0" right="10.0" top="20.0" />
                                  </VBox.margin>
                               </ImageView>
                            </children>
