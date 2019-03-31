@@ -243,12 +243,12 @@
                         </VBox>
                         <VBox prefHeight="146.0" prefWidth="131.0" GridPane.rowIndex="2">
                            <children>
-                              <RadioButton contentDisplay="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="92.0" text="LaptopSkin" toggleGroup="$group">
+                              <RadioButton fx:id="rb11" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="17.0" prefWidth="92.0" text="LaptopSkin" toggleGroup="$group">
                                  <VBox.margin>
                                     <Insets left="10.0" top="2.0" />
                                  </VBox.margin>
                               </RadioButton>
-                              <ImageView fx:id="rb11" fitHeight="99.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" scaleX="1.5" scaleY="1.5">
+                              <ImageView  fitHeight="99.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" scaleX="1.5" scaleY="1.5">
                                  <image>
                                     <Image url="@../../images/laptopSkin.png" />
                                  </image>

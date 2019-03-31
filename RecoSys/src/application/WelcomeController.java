@@ -45,7 +45,7 @@ public class WelcomeController {
         display.setText(message);
         
     }
-    public void sendProduct() {
+    public void sendProduct(String sSSS) {
     
     	ObservableList<String> items = listView.getItems();
     	for(int i=0;i<Login.itemList.size();i++)

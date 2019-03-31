@@ -35,6 +35,7 @@ public class BrowseController {
 	 @FXML private RadioButton rb13;
 	 @FXML private RadioButton rb14;
 	 @FXML private RadioButton rb15;
+	 @FXML
 	final ToggleGroup group = new ToggleGroup();
 //	 Login ob = new Login();
 	@FXML
@@ -148,7 +149,8 @@ public class BrowseController {
 				Login.itemList.add(rb15.getText());
 				 				 System.out.println(rb15.getText());
 	        }
-			welcomeController.sendProduct();
+			
+			welcomeController.sendProduct(i);
 
 	        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
 	        Scene scene2 = new Scene(root1);
