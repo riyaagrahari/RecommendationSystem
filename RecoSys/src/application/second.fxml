@@ -28,9 +28,9 @@
             <Font size="14.0" />
          </font>
       </Button>
-      <Label fx:id="item" layoutX="110.0" layoutY="109.0" prefHeight="17.0" prefWidth="155.0" />
-      <ListView fx:id="listView" layoutX="156.0" layoutY="164.0" prefHeight="200.0" prefWidth="338.0" />
-      <Label layoutX="262.0" layoutY="126.0" text="Items in The Cart">
+     
+      <ListView fx:id="listView" layoutX="154.0" layoutY="143.0" prefHeight="200.0" prefWidth="338.0" />
+      <Label layoutX="263.0" layoutY="98.0" text="Items in The Cart">
          <font>
             <Font size="14.0" />
          </font>
@@ -40,6 +40,16 @@
             <Font size="14.0" />
          </font>
       </Button>
+      <Label fx:id="recommend" layoutX="445.0" layoutY="382.0" prefHeight="25.0" prefWidth="111.0" textAlignment="RIGHT">
+         <font>
+            <Font name="Comic Sans MS Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="text_recommend" alignment="BASELINE_LEFT" layoutX="107.0" layoutY="382.0" prefHeight="25.0" prefWidth="355.0" textFill="RED" wrapText="true">
+         <font>
+            <Font name="Comic Sans MS Italic" size="16.0" />
+         </font>
+      </Label>
      
    </children>
 </AnchorPane>

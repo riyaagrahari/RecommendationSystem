@@ -42,18 +42,20 @@ public class WelcomeController {
     public Label display;
     String item;
     ArrayList<String> Item = new ArrayList<String>();
-    @FXML
-    TableView<Item> view ;
-//    = new TableView<Item>();
-    @FXML
-    TableColumn<String, String> column;
+    public static final String[] ItemUnique = {"Shoes","Blazer","Pendrive","Tie","Watch","T-Shirt","Headphones","WirelessMouse","Laptop","Pen","LaptopSkin","Belt","Socks","Women Shoes","BasketBall"};
+    
     @FXML
     private Button logout;
+    private String selected_item="";
     @FXML
     private Button checkout;
     //Receive message from scene 1
     @FXML private ListView<String> listView;
     static String userName;
+    @FXML
+    private Label recommend;
+    @FXML
+    private Label text_recommend;
     public void sendMessage(String message) {
         //Display the message
     	userName=message;
@@ -61,13 +63,66 @@ public class WelcomeController {
         
     }
     public void sendProduct(String s) {
-    
+        selected_item=s;
     	ObservableList<String> items = listView.getItems();
     	for(int i=0;i<Login.itemList.size();i++)
     	{
     		String it = Login.itemList.get(i);
     		items.add(it);
     	}
+    	
+
+    	Connection con = null;
+    	Statement stmt = null;
+    	ResultSet rs = null;
+    	int max=0;
+    	String suggest="";
+    	int x=0;
+try{
+	con = (Connection) DBConnector.getConnection();
+	stmt= (Statement) con.createStatement();
+	System.out.println(selected_item);
+	for(int i =0;i<15;i++)
+	{
+		 if(ItemUnique[i].equals(selected_item))
+		 continue;
+		 else
+		 {
+    rs = stmt.executeQuery("Select count(*) from `recosys`.`items` where items like'%" + selected_item + "%' and items like '%"+ ItemUnique[i] + "%'"); 
+    
+		 while(rs.next()){
+	    x = rs.getInt("COUNT(*)");	
+	    
+	    System.out.println(ItemUnique[i]+" "+selected_item+" "+x);
+	  }
+//    x = rs.getInt("total");
+   
+    if (x>max)
+    	{max=x;
+    	 suggest=ItemUnique[i];
+    	}
+	}
+	}
+	System.out.println("Suggested Item: "+suggest);
+	text_recommend.setText("Customer who bought "+selected_item+" also bought :");
+	recommend.setText(suggest);
+	
+//    	while(rs.next())  
+//    	System.out.println(rs.getInt(1)+"  "+rs.getString(2)+"  ");  
+}
+catch(SQLException e){
+	e.printStackTrace();
+}
+finally{
+	try{
+    	con.close();  
+	}
+	catch(SQLException e){
+		e.printStackTrace();
+	}
+	}
+    	
+}
            
     	
     	
@@ -75,7 +130,7 @@ public class WelcomeController {
 //    		TableColumn<DataModelClass, String> column = new TableColumn<DataModelClass, String>(item);
 //    	column.setCellValueFactory(new PropertyValueFactory<DataModelClass, String>("nameList"));
     	
-    }
+    
     @FXML
     public void logoutButtonAction(ActionEvent event) {
        // Window owner = logout.getScene().getWindow();
@@ -140,5 +195,6 @@ finally{
 	}
 	}
     	Login.itemList.clear();
+    	listView.getItems().clear();
 }
     }
