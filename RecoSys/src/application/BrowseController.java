@@ -25,7 +25,16 @@ public class BrowseController {
 	 @FXML private RadioButton rb3;
 	 @FXML private RadioButton rb4;
 	 @FXML private RadioButton rb5;
-	 @FXML
+	 @FXML private RadioButton rb6;
+	 @FXML private RadioButton rb7;
+	 @FXML private RadioButton rb8;
+	 @FXML private RadioButton rb9;
+	 @FXML private RadioButton rb10;
+	 @FXML private RadioButton rb11;
+	 @FXML private RadioButton rb12;
+	 @FXML private RadioButton rb13;
+	 @FXML private RadioButton rb14;
+	 @FXML private RadioButton rb15;
 	final ToggleGroup group = new ToggleGroup();
 //	 Login ob = new Login();
 	@FXML
@@ -79,29 +88,65 @@ public class BrowseController {
 				Login.itemList.add(rb5.getText());
 				 				 System.out.println(rb5.getText());
 	        }
-			if(rb4.isSelected())
+			if(rb6.isSelected())
 	        {
-				i=rb4.getText();
-				Login.itemList.add(rb4.getText());
-				 				 System.out.println(rb4.getText());
+				i=rb6.getText();
+				Login.itemList.add(rb6.getText());
+				 				 System.out.println(rb6.getText());
 	        }
-			if(rb4.isSelected())
+			if(rb7.isSelected())
 	        {
-				i=rb4.getText();
-				Login.itemList.add(rb4.getText());
-				 				 System.out.println(rb4.getText());
+				i=rb7.getText();
+				Login.itemList.add(rb7.getText());
+				 				 System.out.println(rb7.getText());
 	        }
-			if(rb4.isSelected())
+			if(rb8.isSelected())
 	        {
-				i=rb4.getText();
-				Login.itemList.add(rb4.getText());
-				 				 System.out.println(rb4.getText());
+				i=rb8.getText();
+				Login.itemList.add(rb8.getText());
+				 				 System.out.println(rb8.getText());
 	        }
-			if(rb4.isSelected())
+			if(rb9.isSelected())
 	        {
-				i=rb4.getText();
-				Login.itemList.add(rb4.getText());
-				 				 System.out.println(rb4.getText());
+				i=rb9.getText();
+				Login.itemList.add(rb9.getText());
+				 				 System.out.println(rb9.getText());
+	        }
+			if(rb10.isSelected())
+	        {
+				i=rb10.getText();
+				Login.itemList.add(rb10.getText());
+				 				 System.out.println(rb10.getText());
+	        }
+			if(rb11.isSelected())
+	        {
+				i=rb11.getText();
+				Login.itemList.add(rb11.getText());
+				 				 System.out.println(rb11.getText());
+	        }
+			if(rb12.isSelected())
+	        {
+				i=rb12.getText();
+				Login.itemList.add(rb12.getText());
+				 				 System.out.println(rb12.getText());
+	        }
+			if(rb13.isSelected())
+	        {
+				i=rb13.getText();
+				Login.itemList.add(rb13.getText());
+				 				 System.out.println(rb13.getText());
+	        }
+			if(rb14.isSelected())
+	        {
+				i=rb14.getText();
+				Login.itemList.add(rb14.getText());
+				 				 System.out.println(rb14.getText());
+	        }
+			if(rb15.isSelected())
+	        {
+				i=rb15.getText();
+				Login.itemList.add(rb15.getText());
+				 				 System.out.println(rb15.getText());
 	        }
 			welcomeController.sendProduct();
 
