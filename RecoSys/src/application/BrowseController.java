@@ -24,6 +24,7 @@ public class BrowseController {
 	 @FXML private RadioButton rb2;
 	 @FXML private RadioButton rb3;
 	 @FXML private RadioButton rb4;
+	 @FXML private RadioButton rb5;
 	 @FXML
 	final ToggleGroup group = new ToggleGroup();
 //	 Login ob = new Login();
@@ -65,6 +66,36 @@ public class BrowseController {
 				i=rb3.getText();
 				Login.itemList.add(rb3.getText());
 				 				 System.out.println(rb3.getText());
+	        }
+			if(rb4.isSelected())
+	        {
+				i=rb4.getText();
+				Login.itemList.add(rb4.getText());
+				 				 System.out.println(rb4.getText());
+	        }
+			if(rb5.isSelected())
+	        {
+				i=rb5.getText();
+				Login.itemList.add(rb5.getText());
+				 				 System.out.println(rb5.getText());
+	        }
+			if(rb4.isSelected())
+	        {
+				i=rb4.getText();
+				Login.itemList.add(rb4.getText());
+				 				 System.out.println(rb4.getText());
+	        }
+			if(rb4.isSelected())
+	        {
+				i=rb4.getText();
+				Login.itemList.add(rb4.getText());
+				 				 System.out.println(rb4.getText());
+	        }
+			if(rb4.isSelected())
+	        {
+				i=rb4.getText();
+				Login.itemList.add(rb4.getText());
+				 				 System.out.println(rb4.getText());
 	        }
 			if(rb4.isSelected())
 	        {
