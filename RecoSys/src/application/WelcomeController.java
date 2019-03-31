@@ -1,6 +1,7 @@
 package application;
 
 
+
 import java.io.IOException;
 import java.util.ArrayList;
 
@@ -13,6 +14,9 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Alert.AlertType;
+import javafx.scene.control.Button;
 //import javafx.scene.control.Alert;
 //import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -24,6 +28,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 //import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 //import javafx.stage.Window;
+import javafx.stage.Window;
 
 public class WelcomeController {
     @FXML
@@ -37,15 +42,20 @@ public class WelcomeController {
 //    = new TableView<Item>();
     @FXML
     TableColumn<String, String> column;
-//    private Button logout;
+    @FXML
+    private Button logout;
+    @FXML
+    private Button checkout;
     //Receive message from scene 1
     @FXML private ListView<String> listView;
+    static String userName;
     public void sendMessage(String message) {
         //Display the message
-        display.setText(message);
+    	userName=message;
+        display.setText(userName);
         
     }
-    public void sendProduct(String sSSS) {
+    public void sendProduct(String s) {
     
     	ObservableList<String> items = listView.getItems();
     	for(int i=0;i<Login.itemList.size();i++)
@@ -61,8 +71,9 @@ public class WelcomeController {
 //    	column.setCellValueFactory(new PropertyValueFactory<DataModelClass, String>("nameList"));
     	
     }
+    @FXML
     public void logoutButtonAction(ActionEvent event) {
-        //Window owner = logout.getScene().getWindow();
+       // Window owner = logout.getScene().getWindow();
         Parent root1 = null;
         FXMLLoader loader2 = null;
 		try {
@@ -93,4 +104,15 @@ public class WelcomeController {
 	        window.setScene(scene1);
 	        window.show();
 }  
+    @FXML
+    public void CheckoutButtonAction(ActionEvent event) {
+    	Window owner = checkout.getScene().getWindow();
+    	
+    	AlertHelper.showAlert(Alert.AlertType.CONFIRMATION, owner, "", 
+              userName+"! You Bought these items\n"+Login.itemList);
+    	
+    	
+    	//itemList.clear();
+
+    }
 }

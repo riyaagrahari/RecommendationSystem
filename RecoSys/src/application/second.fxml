@@ -23,18 +23,23 @@
             <Font size="14.0" />
          </font>
       </Button>
-      <Button layoutX="366.0" layoutY="428.0" mnemonicParsing="false" onAction="#BrowseButtonAction" prefHeight="34.0" prefWidth="111.0" text="Browse Items">
+      <Button layoutX="237.0" layoutY="428.0" mnemonicParsing="false" onAction="#BrowseButtonAction" prefHeight="34.0" prefWidth="111.0" text="Browse Items">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
       <Label fx:id="item" layoutX="110.0" layoutY="109.0" prefHeight="17.0" prefWidth="155.0" />
-      <ListView fx:id="listView" layoutX="207.0" layoutY="164.0" prefHeight="200.0" prefWidth="200.0" />
+      <ListView fx:id="listView" layoutX="156.0" layoutY="164.0" prefHeight="200.0" prefWidth="338.0" />
       <Label layoutX="262.0" layoutY="126.0" text="Items in The Cart">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
+      <Button fx:id="checkout" layoutX="373.0" layoutY="428.0" mnemonicParsing="false" onAction="#CheckoutButtonAction" prefHeight="34.0" prefWidth="111.0" text="Checkout">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
      
    </children>
 </AnchorPane>
