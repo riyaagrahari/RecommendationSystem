@@ -3,7 +3,12 @@ package application;
 
 
 import java.io.IOException;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
+
+import com.mysql.jdbc.Connection;
+import com.mysql.jdbc.Statement;
 
 import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
@@ -109,10 +114,31 @@ public class WelcomeController {
     	Window owner = checkout.getScene().getWindow();
     	
     	AlertHelper.showAlert(Alert.AlertType.CONFIRMATION, owner, "", 
-              userName+"! You Bought these items\n"+Login.itemList);
+              userName + "! You Bought these items\n"+Login.itemList);
     	
-    	
-    	//itemList.clear();
+//    	DBConnector.Connection();
 
-    }
+    	Connection con = null;
+    	Statement stmt = null;
+    	String query = "INSERT INTO `recosys`.`items` (`items`) VALUES ('"+Login.itemList+"')";
+try{
+	con = (Connection) DBConnector.getConnection();
+	stmt= (Statement) con.createStatement();
+    stmt.executeUpdate(query);  
+//    	while(rs.next())  
+//    	System.out.println(rs.getInt(1)+"  "+rs.getString(2)+"  ");  
 }
+catch(SQLException e){
+	e.printStackTrace();
+}
+finally{
+	try{
+    	con.close();  
+	}
+	catch(SQLException e){
+		e.printStackTrace();
+	}
+	}
+    	Login.itemList.clear();
+}
+    }

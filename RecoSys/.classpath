@@ -9,5 +9,6 @@
 	<classpathentry exported="true" kind="con" path="org.eclipse.fx.ide.jdt.core.JAVAFX_CONTAINER"/>
 	<classpathentry kind="lib" path="C:/Program Files/Java/jre1.8.0_201/lib/jfxswt.jar"/>
 	<classpathentry kind="lib" path="C:/Program Files/Java/jre1.8.0_201/lib/ext/jfxrt.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Riya Agrahari/Downloads/mysql-connector-java-5.1.47/mysql-connector-java-5.1.47/mysql-connector-java-5.1.47-bin.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
