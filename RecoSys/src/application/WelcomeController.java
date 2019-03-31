@@ -104,7 +104,7 @@ try{
 	}
 	}
 	System.out.println("Suggested Item: "+suggest);
-	text_recommend.setText("Customer who bought "+selected_item+" also bought :");
+	text_recommend.setText("People who bought "+selected_item+" also bought :");
 	recommend.setText(suggest);
 	
 //    	while(rs.next())  
