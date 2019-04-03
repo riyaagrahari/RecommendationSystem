@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="504.0" prefWidth="614.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.WelcomeController">
+<AnchorPane blendMode="SRC_ATOP" prefHeight="504.0" prefWidth="614.0" styleClass="anchor" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.WelcomeController">
    <children>
       <VBox layoutX="-151.0" layoutY="-115.0" prefHeight="315.0" prefWidth="251.0" />
       <Label layoutX="78.0" layoutY="30.0" prefHeight="58.0" prefWidth="111.0" text="Welcome">

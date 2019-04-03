@@ -196,5 +196,7 @@ finally{
 	}
     	Login.itemList.clear();
     	listView.getItems().clear();
+    	text_recommend.setText("");
+    	recommend.setText("");
 }
     }
