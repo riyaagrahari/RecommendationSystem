@@ -2,6 +2,7 @@ package application;
 
 
 import java.io.IOException;
+import java.util.regex.Pattern;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -26,20 +27,23 @@ public class LoginController {
 
     @FXML
     private Button submitButton;
-
+    private static final String USERNAME_REGEX = "^[a-zA-Z][a-zA-Z0-9]+$";
+    
+    private static final Pattern USERNAME_PATTERN = 
+                                        Pattern.compile(USERNAME_REGEX);
     @FXML
     protected void handleSubmitButtonAction(ActionEvent event) {
         Window owner = submitButton.getScene().getWindow();
-        if(nameField.getText().isEmpty()) {
+        if(nameField.getText().isEmpty() || !USERNAME_PATTERN.matcher(nameField.getText()).matches()){
             AlertHelper.showAlert(Alert.AlertType.ERROR, owner, "Form Error!", 
-                    "Please enter your name");
+                    "Please enter a valid name");
             return;
         }
         
  
-        if(passwordField.getText().isEmpty()) {
+        if(passwordField.getText().isEmpty() || passwordField.getText().length() < 6) {
             AlertHelper.showAlert(Alert.AlertType.ERROR, owner, "Form Error!", 
-                    "Please enter a password");
+                    "Please enter a valid password");
             return;
         }
 

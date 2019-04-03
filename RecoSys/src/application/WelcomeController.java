@@ -2,6 +2,9 @@ package application;
 
 
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -29,6 +32,8 @@ import javafx.scene.control.ListView;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 //import javafx.scene.control.PasswordField;
 //import javafx.scene.control.TextField;
 import javafx.stage.Stage;
@@ -42,27 +47,30 @@ public class WelcomeController {
     public Label display;
     String item;
     ArrayList<String> Item = new ArrayList<String>();
-    public static final String[] ItemUnique = {"Shoes","Blazer","Pendrive","Tie","Watch","T-Shirt","Headphones","WirelessMouse","Laptop","Pen","LaptopSkin","Belt","Socks","Women Shoes","BasketBall"};
+    public static final String[] ItemUnique = {"Shoes","Blazer","Pendrive","Tie","Watch","T-Shirt","Headphones","WirelessMouse","Laptop","Pen","LaptopSkin","Belt","Socks","WomenShoes","BasketBall"};
     
     @FXML
     private Button logout;
     private String selected_item="";
     @FXML
     private Button checkout;
-    //Receive message from scene 1
+    @FXML
+    ImageView item_img; 
     @FXML private ListView<String> listView;
     static String userName;
     @FXML
     private Label recommend;
     @FXML
     private Label text_recommend;
+    
+    String Item_url= "C:/Users/Riya Agrahari/git/RecoSys/images/";
     public void sendMessage(String message) {
         //Display the message
     	userName=message;
         display.setText(userName);
         
     }
-    public void sendProduct(String s) {
+    public void sendProduct(String s) throws FileNotFoundException {
         selected_item=s;
     	ObservableList<String> items = listView.getItems();
     	for(int i=0;i<Login.itemList.size();i++)
@@ -105,7 +113,15 @@ try{
 	}
 	System.out.println("Suggested Item: "+suggest);
 	text_recommend.setText("People who bought "+selected_item+" also bought :");
+	Item_url = Item_url + suggest+".png"; 
 	recommend.setText(suggest);
+	
+	File file = new File(Item_url);
+	System.out.println(Item_url);
+    Image image = new Image(file.toURI().toString());
+    item_img.setImage(image);
+	//Image image = new Image(new FileInputStream(Item_url));
+	//item_img.setImage(Item_url);
 	
 //    	while(rs.next())  
 //    	System.out.println(rs.getInt(1)+"  "+rs.getString(2)+"  ");  
@@ -198,5 +214,10 @@ finally{
     	listView.getItems().clear();
     	text_recommend.setText("");
     	recommend.setText("");
+    	Item_url="";
+    	File file = new File(Item_url);
+    	System.out.println(Item_url);
+        Image image = new Image(file.toURI().toString());
+        item_img.setImage(image);
 }
     }

@@ -1,5 +1,6 @@
 package application;
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
 
 import javafx.beans.value.ChangeListener;
@@ -39,7 +40,7 @@ public class BrowseController {
 	final ToggleGroup group = new ToggleGroup();
 //	 Login ob = new Login();
 	@FXML
-    protected void BrowseButtonAction(ActionEvent event) {
+    protected void BrowseButtonAction(ActionEvent event) throws FileNotFoundException {
 		
         Parent root1 = null;
         FXMLLoader loader2 = null;
