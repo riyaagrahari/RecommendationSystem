@@ -41,7 +41,7 @@
             <Font size="14.0" />
          </font>
       </Button>
-      <Label fx:id="recommend" alignment="CENTER" contentDisplay="CENTER" layoutX="256.0" layoutY="556.0" prefHeight="25.0" prefWidth="148.0" textAlignment="RIGHT" textFill="#150f5b">
+      <Label fx:id="recommend" alignment="CENTER" contentDisplay="CENTER" layoutX="373.0" layoutY="501.0" prefHeight="25.0" prefWidth="148.0" text="ADSGV" textAlignment="RIGHT" textFill="#150f5b">
          <font>
             <Font name="Comic Sans MS" size="16.0" />
          </font>
@@ -51,7 +51,7 @@
             <Font name="Comic Sans MS Bold" size="20.0" />
          </font>
       </Label>
-      <ImageView fx:id="item_img" fitHeight="120.0" fitWidth="148.0" layoutX="275.0" layoutY="429.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="item_img" fitHeight="120.0" fitWidth="148.0" layoutX="266.0" layoutY="429.0" pickOnBounds="true" preserveRatio="true" />
       <ImageView fitHeight="71.0" fitWidth="141.0" layoutX="17.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../images/logo_general.png" />

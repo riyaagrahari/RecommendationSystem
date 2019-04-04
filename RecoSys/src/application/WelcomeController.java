@@ -35,6 +35,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.paint.Color;
+import javafx.scene.text.Font;
 //import javafx.scene.control.PasswordField;
 //import javafx.scene.control.TextField;
 import javafx.stage.Stage;
@@ -76,7 +77,7 @@ public class WelcomeController {
     }
     public void sendProduct(String s, String m) throws FileNotFoundException {
         selected_item=s;
-        if (s == "")
+        if (s == "" && listView.getItems() == null)
         	{text_recommend.setText("Looks like your cart is empty! Check out our most popular item");
         	 text_recommend.setTextFill(Color.web("#ff0000"));
         	}
@@ -124,8 +125,11 @@ try{
     	}
 	}
 	}
+
+    
 	System.out.println("Suggested Item: "+suggest);
-	if(s != "")
+	if (s != "" && listView.getItems() != null)
+	{
 	text_recommend.setText("People who bought "+selected_item+" also bought :");
 	Item_url = Item_url + suggest+".png"; 
 	recommend.setText(suggest);
@@ -134,6 +138,20 @@ try{
 	System.out.println(Item_url);
     Image image = new Image(file.toURI().toString());
     item_img.setImage(image);
+	}
+	if (s == "" && listView.getItems() != null)
+	{
+	text_recommend.setText("Looks like you didn't select anything. Have a look at our most popular item");
+	Item_url = Item_url + suggest+".png"; 
+	recommend.setText(suggest);
+	text_recommend.setTextFill(Color.web("#ff0000"));
+	text_recommend.setFont(new Font("Comic Sans MS", 18));
+	
+	File file = new File(Item_url);
+	System.out.println(Item_url);
+    Image image = new Image(file.toURI().toString());
+    item_img.setImage(image);
+	}
 	//Image image = new Image(new FileInputStream(Item_url));
 	//item_img.setImage(Item_url);
 	
