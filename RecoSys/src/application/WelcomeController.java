@@ -46,6 +46,7 @@ public class WelcomeController {
     @FXML
     public Label display;
     String item;
+    public static ObservableList<String> items;
     ArrayList<String> Item = new ArrayList<String>();
     public static final String[] ItemUnique = {"Shoes","Blazer","Pendrive","Tie","Watch","T-Shirt","Headphones","WirelessMouse","Laptop","Pens","LaptopSkin","Belt","Socks","WomenHeels","BasketBall"};
     
@@ -64,20 +65,26 @@ public class WelcomeController {
     private Label text_recommend;
     
     String Item_url= "C:/Users/Riya Agrahari/git/RecoSys/images/";
-    public void sendMessage(String message) {
+    public void sendMessage(String message, String name) {
         //Display the message
     	userName=message;
+    	  
+    	StartController.welcome_name=message;
         display.setText(userName);
         
     }
-    public void sendProduct(String s) throws FileNotFoundException {
+    public void sendProduct(String s, String m) throws FileNotFoundException {
         selected_item=s;
-    	ObservableList<String> items = listView.getItems();
+    	 items = listView.getItems();
     	for(int i=0;i<StartController.itemList.size();i++)
     	{
     		String it = StartController.itemList.get(i);
     		items.add(it);
+    		
+    		//listView.getItems().clear();
+    		
     	}
+    	display.setText(userName);
     	
 
     	Connection con = null;
@@ -152,6 +159,7 @@ finally{
        // Window owner = logout.getScene().getWindow();
         Parent root1 = null;
         FXMLLoader loader2 = null;
+        items.clear();
 		try {
 			  loader2 = new FXMLLoader(getClass().getResource("first.fxml"));
 			  root1 = loader2.load();
@@ -163,6 +171,9 @@ finally{
 	        Scene scene1 = new Scene(root1);
 	        window.setScene(scene1);
 	        window.show();
+	        StartController.itemList.clear();
+	        
+	      
 }
     public void BrowseButtonAction(ActionEvent event) {
         //Window owner = logout.getScene().getWindow();
@@ -212,6 +223,7 @@ finally{
 	}
     	StartController.itemList.clear();
     	listView.getItems().clear();
+    	
     	text_recommend.setText("");
     	recommend.setText("");
     	Item_url="";

@@ -151,7 +151,7 @@ public class BrowseController {
 				 				 System.out.println(rb15.getText());
 	        }
 			
-			welcomeController.sendProduct(i);
+			welcomeController.sendProduct(i,StartController.welcome_name);
 
 	        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
 	        Scene scene2 = new Scene(root1);

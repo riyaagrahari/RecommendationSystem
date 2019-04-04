@@ -17,6 +17,7 @@ import javafx.stage.Stage;
 public class StartController extends Application {
 
 	public static ArrayList <String> itemList = new ArrayList <String>();
+	public static String welcome_name="";
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("main.fxml"));

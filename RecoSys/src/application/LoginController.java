@@ -61,7 +61,7 @@ public class LoginController {
 		}/* Exception */
        
 		WelcomeController welcomeController = loader.<WelcomeController>getController();
-       welcomeController.sendMessage(nameField.getText());
+       welcomeController.sendMessage(nameField.getText(),"");
         Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
         Scene scene2 = new Scene(root2);
         window.setScene(scene2);
