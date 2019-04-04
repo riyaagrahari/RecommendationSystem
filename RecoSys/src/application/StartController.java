@@ -20,7 +20,8 @@ public class StartController extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("main.fxml"));
-        //primaryStage.getIcons().add(new Image("C:/Users/Riya%Agrahari/git/RecoSys/images/icon.png"));
+//        primaryStage.getIcons().add(new Image("icon.png"));
+        primaryStage.getIcons().add(new Image(StartController.class.getResourceAsStream("logo_icon.png")));
         primaryStage.setTitle("Customer Portal");
         primaryStage.setScene(new Scene(root, 590, 480));
         primaryStage.show();

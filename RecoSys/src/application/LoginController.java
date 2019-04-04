@@ -27,7 +27,7 @@ public class LoginController {
 
     @FXML
     private Button submitButton;
-    private static final String USERNAME_REGEX = "^[a-zA-Z][a-zA-Z0-9]+$";
+    private static final String USERNAME_REGEX = "^[a-zA-Z][-\\s\\a-zA-Z0-9]+$";
     
     private static final Pattern USERNAME_PATTERN = 
                                         Pattern.compile(USERNAME_REGEX);

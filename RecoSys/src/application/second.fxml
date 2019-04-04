@@ -7,51 +7,61 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane blendMode="SRC_ATOP" prefHeight="596.0" prefWidth="705.0" styleClass="anchor" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.WelcomeController">
+<AnchorPane blendMode="SRC_ATOP" prefHeight="620.0" prefWidth="730.0" styleClass="anchor" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.WelcomeController">
    <children>
-      <VBox layoutX="-151.0" layoutY="-115.0" prefHeight="315.0" prefWidth="251.0" />
-      <Label layoutX="78.0" layoutY="30.0" prefHeight="58.0" prefWidth="111.0" text="Welcome">
+      <VBox layoutX="14.0" prefHeight="34.0" prefWidth="121.0" />
+      <Label layoutX="116.0" layoutY="52.0" prefHeight="58.0" prefWidth="111.0" text="Welcome">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
-      <Label fx:id="display" layoutX="182.0" layoutY="37.0" prefHeight="44.0" prefWidth="166.0" textFill="#5e80bf">
+      <Label fx:id="display" layoutX="223.0" layoutY="59.0" prefHeight="44.0" prefWidth="166.0" text="riya" textFill="#0bccda">
          <font>
             <Font size="24.0" />
          </font></Label>
-      <Button id="logout" layoutX="593.0" layoutY="530.0" mnemonicParsing="false" onAction="#logoutButtonAction" prefHeight="34.0" prefWidth="81.0" text="Logout">
+      <Button id="logout" layoutX="615.0" layoutY="568.0" mnemonicParsing="false" onAction="#logoutButtonAction" prefHeight="34.0" prefWidth="81.0" text="Logout">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
-      <Button layoutX="328.0" layoutY="530.0" mnemonicParsing="false" onAction="#BrowseButtonAction" prefHeight="34.0" prefWidth="111.0" text="Browse Items">
+      <Button layoutX="477.0" layoutY="568.0" mnemonicParsing="false" onAction="#BrowseButtonAction" prefHeight="34.0" prefWidth="111.0" text="Browse Items">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
      
-      <ListView fx:id="listView" layoutX="192.0" layoutY="126.0" prefHeight="215.0" prefWidth="299.0" />
-      <Label layoutX="296.0" layoutY="88.0" text="Items in The Cart">
+      <ListView fx:id="listView" layoutX="190.0" layoutY="153.0" prefHeight="215.0" prefWidth="299.0" />
+      <Label layoutX="271.0" layoutY="121.0" text="Items in The Cart" textAlignment="CENTER">
          <font>
-            <Font size="14.0" />
+            <Font name="Comic Sans MS" size="14.0" />
          </font>
       </Label>
-      <Button fx:id="checkout" layoutX="459.0" layoutY="530.0" mnemonicParsing="false" onAction="#CheckoutButtonAction" prefHeight="34.0" prefWidth="111.0" text="Checkout">
+      <Button fx:id="checkout" layoutX="615.0" layoutY="81.0" mnemonicParsing="false" onAction="#CheckoutButtonAction" prefHeight="34.0" prefWidth="111.0" text="Checkout">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
-      <Label fx:id="recommend" alignment="CENTER" contentDisplay="CENTER" layoutX="284.0" layoutY="495.0" prefHeight="25.0" prefWidth="111.0" textAlignment="RIGHT">
+      <Label fx:id="recommend" alignment="CENTER" contentDisplay="CENTER" layoutX="316.0" layoutY="556.0" prefHeight="25.0" prefWidth="148.0" textAlignment="RIGHT" textFill="#150f5b">
          <font>
-            <Font name="Comic Sans MS Bold Italic" size="16.0" />
+            <Font name="Comic Sans MS" size="16.0" />
          </font>
       </Label>
-      <Label fx:id="text_recommend" alignment="CENTER" contentDisplay="CENTER" layoutX="154.0" layoutY="343.0" prefHeight="25.0" prefWidth="389.0" textAlignment="CENTER" textFill="RED" wrapText="true">
+      <Label fx:id="text_recommend" alignment="CENTER" contentDisplay="CENTER" layoutX="103.0" layoutY="388.0" prefHeight="28.0" prefWidth="523.0" textAlignment="CENTER" textFill="#150f5b" wrapText="true">
          <font>
-            <Font name="Comic Sans MS Italic" size="16.0" />
+            <Font name="Comic Sans MS Bold" size="20.0" />
          </font>
       </Label>
-      <ImageView fx:id="item_img" fitHeight="120.0" fitWidth="148.0" layoutX="275.0" layoutY="375.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="item_img" fitHeight="120.0" fitWidth="148.0" layoutX="275.0" layoutY="429.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="71.0" fitWidth="141.0" layoutX="17.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/logo_general.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="58.0" fitWidth="141.0" layoutX="640.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/ShoppingCart2.png" />
+         </image>
+      </ImageView>
      
    </children>
 </AnchorPane>

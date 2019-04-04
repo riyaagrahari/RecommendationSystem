@@ -47,7 +47,7 @@ public class WelcomeController {
     public Label display;
     String item;
     ArrayList<String> Item = new ArrayList<String>();
-    public static final String[] ItemUnique = {"Shoes","Blazer","Pendrive","Tie","Watch","T-Shirt","Headphones","WirelessMouse","Laptop","Pen","LaptopSkin","Belt","Socks","WomenShoes","BasketBall"};
+    public static final String[] ItemUnique = {"Shoes","Blazer","Pendrive","Tie","Watch","T-Shirt","Headphones","WirelessMouse","Laptop","Pens","LaptopSkin","Belt","Socks","WomenHeels","BasketBall"};
     
     @FXML
     private Button logout;
@@ -73,9 +73,9 @@ public class WelcomeController {
     public void sendProduct(String s) throws FileNotFoundException {
         selected_item=s;
     	ObservableList<String> items = listView.getItems();
-    	for(int i=0;i<Login.itemList.size();i++)
+    	for(int i=0;i<StartController.itemList.size();i++)
     	{
-    		String it = Login.itemList.get(i);
+    		String it = StartController.itemList.get(i);
     		items.add(it);
     	}
     	
@@ -185,13 +185,13 @@ finally{
     	Window owner = checkout.getScene().getWindow();
     	
     	AlertHelper.showAlert(Alert.AlertType.CONFIRMATION, owner, "", 
-              userName + "! You Bought these items\n"+Login.itemList);
+              userName + "! You Bought these items\n"+StartController.itemList);
     	
 //    	DBConnector.Connection();
 
     	Connection con = null;
     	Statement stmt = null;
-    	String query = "INSERT INTO `recosys`.`items` (`items`) VALUES ('"+Login.itemList+"')";
+    	String query = "INSERT INTO `recosys`.`items` (`items`) VALUES ('"+StartController.itemList+"')";
 try{
 	con = (Connection) DBConnector.getConnection();
 	stmt= (Statement) con.createStatement();
@@ -210,7 +210,7 @@ finally{
 		e.printStackTrace();
 	}
 	}
-    	Login.itemList.clear();
+    	StartController.itemList.clear();
     	listView.getItems().clear();
     	text_recommend.setText("");
     	recommend.setText("");

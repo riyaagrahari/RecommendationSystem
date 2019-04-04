@@ -38,7 +38,7 @@ public class BrowseController {
 	 @FXML private RadioButton rb15;
 	 @FXML
 	final ToggleGroup group = new ToggleGroup();
-//	 Login ob = new Login();
+//	 StartController ob = new StartController();
 	@FXML
     protected void BrowseButtonAction(ActionEvent event) throws FileNotFoundException {
 		
@@ -63,91 +63,91 @@ public class BrowseController {
 			if(rb1.isSelected())
 	        {
 				i=rb1.getText();
-				Login.itemList.add(rb1.getText());
+				StartController.itemList.add(rb1.getText());
 				 				 System.out.println(rb1.getText());
 	        }
 			if(rb2.isSelected())
 	        {
 				i=rb2.getText();
-				Login.itemList.add(rb2.getText());
+				StartController.itemList.add(rb2.getText());
 				 				 System.out.println(rb2.getText());
 	        }
 			if(rb3.isSelected())
 	        {
 				i=rb3.getText();
-				Login.itemList.add(rb3.getText());
+				StartController.itemList.add(rb3.getText());
 				 				 System.out.println(rb3.getText());
 	        }
 			if(rb4.isSelected())
 	        {
 				i=rb4.getText();
-				Login.itemList.add(rb4.getText());
+				StartController.itemList.add(rb4.getText());
 				 				 System.out.println(rb4.getText());
 	        }
 			if(rb5.isSelected())
 	        {
 				i=rb5.getText();
-				Login.itemList.add(rb5.getText());
+				StartController.itemList.add(rb5.getText());
 				 				 System.out.println(rb5.getText());
 	        }
 			if(rb6.isSelected())
 	        {
 				i=rb6.getText();
-				Login.itemList.add(rb6.getText());
+				StartController.itemList.add(rb6.getText());
 				 				 System.out.println(rb6.getText());
 	        }
 			if(rb7.isSelected())
 	        {
 				i=rb7.getText();
-				Login.itemList.add(rb7.getText());
+				StartController.itemList.add(rb7.getText());
 				 				 System.out.println(rb7.getText());
 	        }
 			if(rb8.isSelected())
 	        {
 				i=rb8.getText();
-				Login.itemList.add(rb8.getText());
+				StartController.itemList.add(rb8.getText());
 				 				 System.out.println(rb8.getText());
 	        }
 			if(rb9.isSelected())
 	        {
 				i=rb9.getText();
-				Login.itemList.add(rb9.getText());
+				StartController.itemList.add(rb9.getText());
 				 				 System.out.println(rb9.getText());
 	        }
 			if(rb10.isSelected())
 	        {
 				i=rb10.getText();
-				Login.itemList.add(rb10.getText());
+				StartController.itemList.add(rb10.getText());
 				 				 System.out.println(rb10.getText());
 	        }
 			if(rb11.isSelected())
 	        {
 				i=rb11.getText();
-				Login.itemList.add(rb11.getText());
+				StartController.itemList.add(rb11.getText());
 				 				 System.out.println(rb11.getText());
 	        }
 			if(rb12.isSelected())
 	        {
 				i=rb12.getText();
-				Login.itemList.add(rb12.getText());
+				StartController.itemList.add(rb12.getText());
 				 				 System.out.println(rb12.getText());
 	        }
 			if(rb13.isSelected())
 	        {
 				i=rb13.getText();
-				Login.itemList.add(rb13.getText());
+				StartController.itemList.add(rb13.getText());
 				 				 System.out.println(rb13.getText());
 	        }
 			if(rb14.isSelected())
 	        {
 				i=rb14.getText();
-				Login.itemList.add(rb14.getText());
+				StartController.itemList.add(rb14.getText());
 				 				 System.out.println(rb14.getText());
 	        }
 			if(rb15.isSelected())
 	        {
 				i=rb15.getText();
-				Login.itemList.add(rb15.getText());
+				StartController.itemList.add(rb15.getText());
 				 				 System.out.println(rb15.getText());
 	        }
 			

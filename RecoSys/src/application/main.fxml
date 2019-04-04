@@ -11,12 +11,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="590.0" styleClass="anchor" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.StartController">
    <children>
-      <ImageView fitHeight="336.0" fitWidth="357.0" layoutX="135.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../images/logo2.png" />
-         </image>
-      </ImageView>
-      <Button fx:id="start" alignment="CENTER" layoutX="216.0" layoutY="404.0" mnemonicParsing="false" onAction="#startAction" prefHeight="30.0" prefWidth="175.0" text="Let's start Shopping">
+      <Button alignment="CENTER" layoutX="216.0" layoutY="404.0" mnemonicParsing="false" onAction="#startAction" prefHeight="30.0" prefWidth="175.0" text="Let's start Shopping">
          <effect>
             <Blend />
          </effect>
@@ -27,6 +22,14 @@
             <Font name="Comic Sans MS" size="14.0" />
          </font>
       </Button>
+      <ImageView fitHeight="376.0" fitWidth="384.0" layoutX="110.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/logo2.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="-0.26" contrast="0.26" />
+         </effect>
+      </ImageView>
    </children>
    <effect>
       <Glow />
