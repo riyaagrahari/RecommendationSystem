@@ -41,12 +41,12 @@
             <Font size="14.0" />
          </font>
       </Button>
-      <Label fx:id="recommend" alignment="CENTER" contentDisplay="CENTER" layoutX="316.0" layoutY="556.0" prefHeight="25.0" prefWidth="148.0" textAlignment="RIGHT" textFill="#150f5b">
+      <Label fx:id="recommend" alignment="CENTER" contentDisplay="CENTER" layoutX="256.0" layoutY="556.0" prefHeight="25.0" prefWidth="148.0" textAlignment="RIGHT" textFill="#150f5b">
          <font>
             <Font name="Comic Sans MS" size="16.0" />
          </font>
       </Label>
-      <Label fx:id="text_recommend" alignment="CENTER" contentDisplay="CENTER" layoutX="103.0" layoutY="388.0" prefHeight="28.0" prefWidth="523.0" textAlignment="CENTER" textFill="#150f5b" wrapText="true">
+      <Label fx:id="text_recommend" alignment="CENTER" contentDisplay="CENTER" layoutX="33.0" layoutY="388.0" prefHeight="28.0" prefWidth="666.0" textAlignment="CENTER" textFill="#150f5b" wrapText="true">
          <font>
             <Font name="Comic Sans MS Bold" size="20.0" />
          </font>

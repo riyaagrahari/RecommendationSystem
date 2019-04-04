@@ -34,6 +34,7 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.paint.Color;
 //import javafx.scene.control.PasswordField;
 //import javafx.scene.control.TextField;
 import javafx.stage.Stage;
@@ -75,6 +76,11 @@ public class WelcomeController {
     }
     public void sendProduct(String s, String m) throws FileNotFoundException {
         selected_item=s;
+        if (s == "")
+        	{text_recommend.setText("Looks like your cart is empty! Check out our most popular item");
+        	 text_recommend.setTextFill(Color.web("#ff0000"));
+        	}
+        	
     	 items = listView.getItems();
     	for(int i=0;i<StartController.itemList.size();i++)
     	{
@@ -119,6 +125,7 @@ try{
 	}
 	}
 	System.out.println("Suggested Item: "+suggest);
+	if(s != "")
 	text_recommend.setText("People who bought "+selected_item+" also bought :");
 	Item_url = Item_url + suggest+".png"; 
 	recommend.setText(suggest);
