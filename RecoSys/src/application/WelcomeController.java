@@ -50,7 +50,7 @@ public class WelcomeController {
     String item;
     public static ObservableList<String> items;
     ArrayList<String> Item = new ArrayList<String>();
-    public static final String[] ItemUnique = {"Shoes","Blazer","Pendrive","Tie","Watch","T-Shirt","Headphones","WirelessMouse","Laptop","Pens","LaptopSkin","Belt","Socks","WomenHeels","BasketBall"};
+    public static final String[] ItemUnique = {"Shoes","BasketBall","HeadPhones","Watch","WirelessMouse","T-Shirt","Tie","Socks","Pendrive","Laptop","Belt","LaptopSkin","Pens","WomenHeels","Blazer","Bedsheet","Cricket-Bat","Helmet","Blanket","Knee-Guard","StudyLamp","Toothbrush","Cushion","Flower vase","Sunglasses","Mobile-BackCover","Dress","Notebook","Gloves","Mobile","Earrings","Chair","Wallet","Perfumes","ToothPaste","Air-Conditioner","Bottle","FashWash","Pencil","Table","Induction-CookTops","Television","TongueCleaner","Cricket-Ball","Induction-Cookware","Tempered Glass","Bag","Purse","Soap","TableCloth"};
     
     @FXML
     private Button logout;
