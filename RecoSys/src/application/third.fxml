@@ -274,7 +274,7 @@
                         </VBox>
                         <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="4" GridPane.rowIndex="5">
                            <children>
-                              <RadioButton mnemonicParsing="false" text="Mobile" />
+                              <RadioButton fx:id="rb21" mnemonicParsing="false" text="Mobile" />
                               <ImageView fitHeight="90.0" fitWidth="56.0" pickOnBounds="true">
                                  <image>
                                     <Image url="@../../images/Mobile.png" />
@@ -287,7 +287,7 @@
                         </VBox>
                         <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="5">
                            <children>
-                              <RadioButton mnemonicParsing="false" text="Gloves" />
+                              <RadioButton fx:id="rb22" mnemonicParsing="false" text="Gloves" />
                               <ImageView fitHeight="109.0" fitWidth="109.0" pickOnBounds="true">
                                  <image>
                                     <Image url="@../../images/Gloves.png" />
@@ -297,7 +297,7 @@
                         </VBox>
                         <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="5">
                            <children>
-                              <RadioButton mnemonicParsing="false" text="Notebook" />
+                              <RadioButton fx:id="rb23" mnemonicParsing="false" text="Notebook" />
                               <ImageView fitHeight="98.0" fitWidth="79.0" pickOnBounds="true">
                                  <image>
                                     <Image url="@../../images/Notebook.png" />
@@ -310,7 +310,7 @@
                         </VBox>
                         <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
                            <children>
-                              <RadioButton mnemonicParsing="false" prefHeight="17.0" prefWidth="97.0" text="Dress">
+                              <RadioButton fx:id="rb24" mnemonicParsing="false" prefHeight="17.0" prefWidth="97.0" text="Dress">
                                  <VBox.margin>
                                     <Insets left="10.0" />
                                  </VBox.margin>
@@ -327,7 +327,7 @@
                         </VBox>
                         <VBox prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="5">
                            <children>
-                              <RadioButton mnemonicParsing="false" prefHeight="17.0" prefWidth="119.0" text="Mobile-BackCover" />
+                              <RadioButton fx:id="rb25" mnemonicParsing="false" prefHeight="17.0" prefWidth="119.0" text="Mobile-BackCover" />
                               <ImageView fitHeight="82.0" fitWidth="91.0" pickOnBounds="true">
                                  <image>
                                     <Image url="@../../images/Mobile-BackCover.png" />
@@ -340,7 +340,7 @@
                         </VBox>
                         <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="4" GridPane.rowIndex="4">
                            <children>
-                              <RadioButton mnemonicParsing="false" text="Sunglasses" />
+                              <RadioButton fx:id="rb26" mnemonicParsing="false" text="Sunglasses" />
                               <ImageView fitHeight="87.0" fitWidth="112.0" pickOnBounds="true">
                                  <image>
                                     <Image url="@../../images/Sunglasses.png" />
@@ -350,7 +350,7 @@
                         </VBox>
                         <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="4">
                            <children>
-                              <RadioButton mnemonicParsing="false" text="Flower vase" />
+                              <RadioButton fx:id="rb27" mnemonicParsing="false" text="Flower vase" />
                               <ImageView fitHeight="93.0" fitWidth="84.0" pickOnBounds="true">
                                  <image>
                                     <Image url="@../../images/Flower%20vase.png" />
@@ -363,7 +363,7 @@
                         </VBox>
                         <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
                            <children>
-                              <RadioButton mnemonicParsing="false" text="Cushion" />
+                              <RadioButton fx:id="rb28" mnemonicParsing="false" text="Cushion" />
                               <ImageView fitHeight="84.0" fitWidth="82.0" pickOnBounds="true">
                                  <image>
                                     <Image url="@../../images/Cushion.png" />
@@ -376,7 +376,7 @@
                         </VBox>
                         <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
                            <children>
-                              <RadioButton mnemonicParsing="false" text="ToothBrush" />
+                              <RadioButton fx:id="rb29" mnemonicParsing="false" text="ToothBrush" />
                               <ImageView fitHeight="105.0" fitWidth="107.0" pickOnBounds="true">
                                  <image>
                                     <Image url="@../../images/ToothBrush.png" />
@@ -389,7 +389,7 @@
                         </VBox>
                         <VBox prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="4">
                            <children>
-                              <RadioButton mnemonicParsing="false" text="StudyLamp" />
+                              <RadioButton fx:id="rb30" mnemonicParsing="false" text="StudyLamp" />
                               <ImageView fitHeight="101.0" fitWidth="81.0" pickOnBounds="true">
                                  <image>
                                     <Image url="@../../images/StudyLamp.png" />
@@ -402,7 +402,7 @@
                         </VBox>
                         <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="4" GridPane.rowIndex="3">
                            <children>
-                              <RadioButton mnemonicParsing="false" prefHeight="34.0" prefWidth="135.0" text="Knee-Guard" />
+                              <RadioButton fx:id="rb31" mnemonicParsing="false" prefHeight="34.0" prefWidth="135.0" text="Knee-Guard" />
                               <ImageView fitHeight="100.0" fitWidth="109.0" pickOnBounds="true">
                                  <image>
                                     <Image url="@../../images/Knee-Guard.png" />
@@ -412,7 +412,7 @@
                         </VBox>
                         <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
                            <children>
-                              <RadioButton mnemonicParsing="false" text="Blanket" />
+                              <RadioButton fx:id="rb32" mnemonicParsing="false" text="Blanket" />
                               <ImageView fitHeight="84.0" fitWidth="79.0" pickOnBounds="true">
                                  <image>
                                     <Image url="@../../images/Blanket.png" />
@@ -425,7 +425,7 @@
                         </VBox>
                         <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
                            <children>
-                              <RadioButton mnemonicParsing="false" text="Helmet" />
+                              <RadioButton fx:id="rb33" mnemonicParsing="false" text="Helmet" />
                               <ImageView fitHeight="79.0" fitWidth="102.0" pickOnBounds="true">
                                  <image>
                                     <Image url="@../../images/Helmet.png" />
@@ -435,7 +435,7 @@
                         </VBox>
                         <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
                            <children>
-                              <RadioButton mnemonicParsing="false" text="Cricket-Bat" />
+                              <RadioButton fx:id="rb34" mnemonicParsing="false" text="Cricket-Bat" />
                               <ImageView fitHeight="93.0" fitWidth="92.0" pickOnBounds="true">
                                  <image>
                                     <Image url="@../../images/Cricket-Bat.png" />
@@ -445,7 +445,7 @@
                         </VBox>
                         <VBox prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="3">
                            <children>
-                              <RadioButton mnemonicParsing="false" text="Bedsheet" />
+                              <RadioButton fx:id="rb35" mnemonicParsing="false" text="Bedsheet" />
                               <ImageView fitHeight="114.0" fitWidth="113.0" pickOnBounds="true">
                                  <image>
                                     <Image url="@../../images/Bedsheet.png" />
@@ -455,7 +455,7 @@
                         </VBox>
                         <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="4" GridPane.rowIndex="2">
                            <children>
-                              <RadioButton mnemonicParsing="false" text="Blazer" />
+                              <RadioButton fx:id="rb36" mnemonicParsing="false" text="Blazer" />
                               <ImageView fitHeight="106.0" fitWidth="101.0" pickOnBounds="true">
                                  <image>
                                     <Image url="@../../images/Blazer.png" />
@@ -465,7 +465,7 @@
                         </VBox>
                         <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
                            <children>
-                              <RadioButton mnemonicParsing="false" text="WomenHeels" />
+                              <RadioButton fx:id="rb37" mnemonicParsing="false" text="WomenHeels" />
                               <ImageView fitHeight="95.0" fitWidth="92.0" pickOnBounds="true">
                                  <image>
                                     <Image url="@../../images/WomenHeels.png" />
@@ -475,7 +475,7 @@
                         </VBox>
                         <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
                            <children>
-                              <RadioButton mnemonicParsing="false" text="Pens" />
+                              <RadioButton fx:id="rb38" mnemonicParsing="false" text="Pens" />
                               <ImageView fitHeight="100.0" fitWidth="89.0" pickOnBounds="true">
                                  <image>
                                     <Image url="@../../images/Pens.png" />
@@ -485,7 +485,7 @@
                         </VBox>
                         <VBox prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="2">
                            <children>
-                              <RadioButton mnemonicParsing="false" text="Belt" />
+                              <RadioButton fx:id="rb39" mnemonicParsing="false" text="Belt" />
                               <ImageView fitHeight="74.0" fitWidth="93.0" pickOnBounds="true">
                                  <image>
                                     <Image url="@../../images/Belt.png" />
@@ -498,7 +498,7 @@
                         </VBox>
                         <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
                            <children>
-                              <RadioButton mnemonicParsing="false" text="LaptopSkin" />
+                              <RadioButton fx:id="rb40" mnemonicParsing="false" text="LaptopSkin" />
                               <ImageView fitHeight="106.0" fitWidth="103.0" pickOnBounds="true">
                                  <image>
                                     <Image url="@../../images/LaptopSkin.png" />
@@ -508,7 +508,7 @@
                         </VBox>
                         <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="4">
                            <children>
-                              <RadioButton mnemonicParsing="false" text="WirelessMouse" />
+                              <RadioButton fx:id="rb41" mnemonicParsing="false" text="WirelessMouse" />
                               <ImageView fitHeight="96.0" fitWidth="95.0" pickOnBounds="true">
                                  <image>
                                     <Image url="@../../images/WirelessMouse.png" />
@@ -518,7 +518,7 @@
                         </VBox>
                         <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="4" GridPane.rowIndex="1">
                            <children>
-                              <RadioButton mnemonicParsing="false" text="Laptop" />
+                              <RadioButton fx:id="rb42" mnemonicParsing="false" text="Laptop" />
                               <ImageView fitHeight="86.0" fitWidth="94.0" pickOnBounds="true">
                                  <image>
                                     <Image url="@../../images/Laptop.png" />
@@ -528,7 +528,7 @@
                         </VBox>
                         <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
                            <children>
-                              <RadioButton mnemonicParsing="false" text="Pendrive" />
+                              <RadioButton fx:id="rb43" mnemonicParsing="false" text="Pendrive" />
                               <ImageView fitHeight="96.0" fitWidth="89.0" pickOnBounds="true">
                                  <image>
                                     <Image url="@../../images/Pendrive.png" />
@@ -541,7 +541,7 @@
                         </VBox>
                         <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
                            <children>
-                              <RadioButton mnemonicParsing="false" text="Tie" />
+                              <RadioButton fx:id="rb44" mnemonicParsing="false" text="Tie" />
                               <ImageView fitHeight="108.0" fitWidth="50.0" pickOnBounds="true">
                                  <image>
                                     <Image url="@../../images/Tie.png" />
@@ -554,7 +554,7 @@
                         </VBox>
                         <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
                            <children>
-                              <RadioButton mnemonicParsing="false" text="Socks" />
+                              <RadioButton fx:id="rb45" mnemonicParsing="false" text="Socks" />
                               <ImageView fitHeight="94.0" fitWidth="69.0" pickOnBounds="true">
                                  <image>
                                     <Image url="@../../images/Socks.png" />
@@ -567,7 +567,7 @@
                         </VBox>
                         <VBox prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="1">
                            <children>
-                              <RadioButton mnemonicParsing="false" text="T-Shirt" />
+                              <RadioButton fx:id="rb46" mnemonicParsing="false" text="T-Shirt" />
                               <ImageView fitHeight="114.0" fitWidth="118.0" pickOnBounds="true">
                                  <image>
                                     <Image url="@../../images/T-shirt.png" />
@@ -577,7 +577,7 @@
                         </VBox>
                         <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2">
                            <children>
-                              <RadioButton mnemonicParsing="false" prefHeight="17.0" prefWidth="104.0" text="Headphones" />
+                              <RadioButton fx:id="rb47" mnemonicParsing="false" prefHeight="17.0" prefWidth="104.0" text="Headphones" />
                               <ImageView fitHeight="90.0" fitWidth="81.0" pickOnBounds="true">
                                  <image>
                                     <Image url="@../../images/Headphones.png" />
@@ -587,7 +587,7 @@
                         </VBox>
                         <VBox prefHeight="200.0" prefWidth="100.0">
                            <children>
-                              <RadioButton mnemonicParsing="false" text="Shoes" />
+                              <RadioButton fx:id="rb48" mnemonicParsing="false" text="Shoes" />
                               <ImageView fitHeight="97.0" fitWidth="77.0" pickOnBounds="true">
                                  <image>
                                     <Image url="@../../images/Shoes.png" />
@@ -597,7 +597,7 @@
                         </VBox>
                         <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3">
                            <children>
-                              <RadioButton mnemonicParsing="false" text="Watch" />
+                              <RadioButton fx:id="rb49" mnemonicParsing="false" text="Watch" />
                               <ImageView fitHeight="98.0" fitWidth="86.0" pickOnBounds="true">
                                  <image>
                                     <Image url="@../../images/Watch.png" />
@@ -607,7 +607,7 @@
                         </VBox>
                         <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
                            <children>
-                              <RadioButton mnemonicParsing="false" text="BasketBall" />
+                              <RadioButton fx:id="rb50" mnemonicParsing="false" text="BasketBall" />
                               <ImageView fitHeight="82.0" fitWidth="80.0" pickOnBounds="true">
                                  <image>
                                     <Image url="@../../images/BasketBall.png" />
