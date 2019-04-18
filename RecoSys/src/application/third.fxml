@@ -11,7 +11,7 @@
    <children>
       <ScrollPane layoutY="50.0" prefHeight="511.0" prefViewportHeight="1336.0" prefViewportWidth="600.0" prefWidth="600.0">
          <content>
-            <AnchorPane styleClass="anchor" stylesheets="@style.css">
+            <AnchorPane styleClass="pane" stylesheets="@style.css">
                <children>
                   <GridPane prefHeight="1334.0" prefWidth="587.0">
                     <columnConstraints>
@@ -618,10 +618,13 @@
                      </children>
                   </GridPane>
                </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
             </AnchorPane>
          </content>
       </ScrollPane>
-      <Button layoutX="506.0" layoutY="14.0" mnemonicParsing="false" text="Add to Cart" />
+      <Button fx:id="doneButton" layoutX="506.0" layoutY="14.0" mnemonicParsing="false" onAction="#BrowseButtonAction" text="Add to Cart" />
       <ImageView fitHeight="40.0" fitWidth="104.0" layoutX="6.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../images/logo_general.png" />
