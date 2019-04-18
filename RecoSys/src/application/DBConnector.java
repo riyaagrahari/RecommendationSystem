@@ -5,7 +5,7 @@ class DBConnector{
 	public static DBConnector instance = new DBConnector();
 	public final static String URL="jdbc:mysql://localhost:3306/recosys";
 	public final static String user = "root";
-	public final static String password = "Mummy123@";
+	public final static String password = "root";
 public void DBConnector(){ 
 
 try{  
