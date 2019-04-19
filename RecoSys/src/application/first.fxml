@@ -54,5 +54,6 @@
             <Image url="@../../images/logo_general.png" />
          </image>
       </ImageView>
+      <ListView fx:id="list" layoutX="34.0" layoutY="198.0" prefHeight="200.0" prefWidth="200.0" scaleX="0.0" scaleY="0.0" scaleZ="0.0" />
    </children>
 </AnchorPane>

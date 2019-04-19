@@ -14,7 +14,7 @@
          <font>
             <Font size="24.0" />
          </font>
-      </Label>
+      </Label>s
       <Label fx:id="display" layoutX="223.0" layoutY="59.0" prefHeight="44.0" prefWidth="166.0" text="riya" textFill="#0bccda">
          <font>
             <Font size="24.0" />
@@ -41,7 +41,7 @@
             <Font size="14.0" />
          </font>
       </Button>
-      <Label fx:id="recommend" alignment="CENTER" contentDisplay="CENTER" layoutX="256.0" layoutY="556.0" prefHeight="25.0" prefWidth="148.0" text="Tie" textAlignment="RIGHT" textFill="#150f5b">
+      <Label fx:id="recommend" alignment="CENTER" contentDisplay="CENTER" layoutX="256.0" layoutY="556.0" prefHeight="25.0" prefWidth="148.0" text="" textAlignment="RIGHT" textFill="#150f5b">
          <font>
             <Font name="Comic Sans MS" size="16.0" />
          </font>
