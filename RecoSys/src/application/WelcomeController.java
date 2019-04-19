@@ -130,7 +130,7 @@ try{
 	if (s != "" && listView.getItems() != null)
 	{
 	text_recommend.setText("People who bought "+selected_item+" also bought :");
-	Item_url = Item_url + suggest+".png"; 
+	Item_url = Item_url + suggest+".gif"; 
 	recommend.setText(suggest);
 	
 	File file = new File(Item_url);
@@ -196,11 +196,13 @@ finally{
 	        window.setScene(scene1);
 	        window.show();
 	        StartController.itemList.clear();
-	        
+	      
 	      
 }
+ 
     public void BrowseButtonAction(ActionEvent event) {
         //Window owner = logout.getScene().getWindow();
+    	
         Parent root1 = null;
         FXMLLoader loader2 = null;
 		try {

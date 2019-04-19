@@ -36,14 +36,14 @@
                      <children>
                         <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="4" GridPane.rowIndex="9">
                            <children>
-                              <RadioButton fx:id="rb1" mnemonicParsing="false" text="TableCloth" >
+                              <RadioButton fx:id="rb1" mnemonicParsing="false" text="TableCloth">
                               <toggleGroup>
                                     <ToggleGroup fx:id="group" />
                                  </toggleGroup>
                                 </RadioButton>
                               <ImageView fitHeight="95.0" fitWidth="117.0" pickOnBounds="true">
                                  <image>
-                                    <Image url="@../../images/TableCloth.png" />
+                                    <Image url="@../../images/TableCloth.gif" />
                                  </image>
                                  <VBox.margin>
                                     <Insets top="20.0" />
@@ -56,7 +56,7 @@
                               <RadioButton fx:id="rb2" mnemonicParsing="false" prefHeight="31.0" prefWidth="118.0" text="Induction-Cookware" toggleGroup="$group" />
                               <ImageView fitHeight="114.0" fitWidth="118.0" pickOnBounds="true">
                                  <image>
-                                    <Image url="@../../images/Induction-Cookware.png" />
+                                    <Image url="@../../images/Induction-Cookware.gif" />
                                  </image>
                               </ImageView>
                            </children>
@@ -66,7 +66,7 @@
                               <RadioButton fx:id="rb3" mnemonicParsing="false" text="Chair" toggleGroup="$group" />
                               <ImageView fitHeight="111.0" fitWidth="76.0" pickOnBounds="true">
                                  <image>
-                                    <Image url="@../../images/Chair.png" />
+                                    <Image url="@../../images/Chair.gif" />
                                  </image>
                               </ImageView>
                            </children>
@@ -76,7 +76,7 @@
                               <RadioButton fx:id="rb4" mnemonicParsing="false" text="Cricket-Ball" toggleGroup="$group" />
                               <ImageView fitHeight="71.0" fitWidth="72.0" pickOnBounds="true">
                                  <image>
-                                    <Image url="@../../images/Cricket-Ball.png" />
+                                    <Image url="@../../images/Cricket-Ball.gif" />
                                  </image>
                                  <VBox.margin>
                                     <Insets left="10.0" top="10.0" />
@@ -89,7 +89,7 @@
                               <RadioButton fx:id="rb5" mnemonicParsing="false" prefHeight="43.0" prefWidth="117.0" text="Pencil" toggleGroup="$group" />
                               <ImageView fitHeight="104.0" fitWidth="98.0" pickOnBounds="true">
                                  <image>
-                                    <Image url="@../../images/Pencil.png" />
+                                    <Image url="@../../images/Pencil.gif" />
                                  </image>
                               </ImageView>
                            </children>
@@ -99,7 +99,7 @@
                               <RadioButton fx:id="rb6" mnemonicParsing="false" text="Wallet" toggleGroup="$group" />
                               <ImageView fitHeight="78.0" fitWidth="84.0" pickOnBounds="true">
                                  <image>
-                                    <Image url="@../../images/Wallet.png" />
+                                    <Image url="@../../images/Wallet.gif" />
                                  </image>
                                  <VBox.margin>
                                     <Insets top="10.0" />
@@ -112,7 +112,7 @@
                               <RadioButton fx:id="rb7" mnemonicParsing="false" text="Perfumes" toggleGroup="$group" />
                               <ImageView fitHeight="88.0" fitWidth="89.0" pickOnBounds="true">
                                  <image>
-                                    <Image url="@../../images/Perfumes.png" />
+                                    <Image url="@../../images/Perfumes.gif" />
                                  </image>
                                  <VBox.margin>
                                     <Insets top="10.0" />
@@ -125,7 +125,7 @@
                               <RadioButton fx:id="rb8" mnemonicParsing="false" text="ToothPaste" toggleGroup="$group" />
                               <ImageView fitHeight="104.0" fitWidth="94.0" pickOnBounds="true">
                                  <image>
-                                    <Image url="@../../images/ToothPaste.png" />
+                                    <Image url="@../../images/ToothPaste.gif" />
                                  </image>
                               </ImageView>
                            </children>
@@ -135,7 +135,7 @@
                               <RadioButton fx:id="rb9" mnemonicParsing="false" text="Air-Conditioner" toggleGroup="$group" />
                               <ImageView fitHeight="114.0" fitWidth="118.0" pickOnBounds="true">
                                  <image>
-                                    <Image url="@../../images/Air-Conditioner.png" />
+                                    <Image url="@../../images/Air-Conditioner.gif" />
                                  </image>
                               </ImageView>
                            </children>
@@ -145,7 +145,7 @@
                               <RadioButton fx:id="rb10" mnemonicParsing="false" text="FaceWash" toggleGroup="$group" />
                               <ImageView fitHeight="100.0" fitWidth="95.0" pickOnBounds="true">
                                  <image>
-                                    <Image url="@../../images/FaceWash.png" />
+                                    <Image url="@../../images/FaceWash.gif" />
                                  </image>
                               </ImageView>
                            </children>
@@ -155,7 +155,7 @@
                               <RadioButton fx:id="rb11" mnemonicParsing="false" text="Purse" toggleGroup="$group" />
                               <ImageView fitHeight="114.0" fitWidth="118.0" pickOnBounds="true">
                                  <image>
-                                    <Image url="@../../images/Purse.png" />
+                                    <Image url="@../../images/Purse.gif" />
                                  </image>
                               </ImageView>
                            </children>
@@ -165,7 +165,7 @@
                               <RadioButton fx:id="rb12" mnemonicParsing="false" text="Bottle" toggleGroup="$group" />
                               <ImageView fitHeight="94.0" fitWidth="93.0" pickOnBounds="true">
                                  <image>
-                                    <Image url="@../../images/Bottle.png" />
+                                    <Image url="@../../images/Bottle.gif" />
                                  </image>
                                  <VBox.margin>
                                     <Insets top="10.0" />
@@ -178,7 +178,7 @@
                               <RadioButton fx:id="rb13" mnemonicParsing="false" text="Tempered Glass" toggleGroup="$group" />
                               <ImageView fitHeight="108.0" fitWidth="103.0" pickOnBounds="true">
                                  <image>
-                                    <Image url="@../../images/Tempered%20Glass.png" />
+                                    <Image url="@../../images/Tempered%20Glass.gif" />
                                  </image>
                                  <VBox.margin>
                                     <Insets top="10.0" />
@@ -191,7 +191,7 @@
                               <RadioButton fx:id="rb14" mnemonicParsing="false" text="Soap" toggleGroup="$group" />
                               <ImageView fitHeight="114.0" fitWidth="118.0" pickOnBounds="true">
                                  <image>
-                                    <Image url="@../../images/Soap.png" />
+                                    <Image url="@../../images/Soap.gif" />
                                  </image>
                               </ImageView>
                            </children>
@@ -205,7 +205,7 @@
                               </RadioButton>
                               <ImageView fitHeight="73.0" fitWidth="95.0" pickOnBounds="true">
                                  <image>
-                                    <Image url="@../../images/Table.png" />
+                                    <Image url="@../../images/Table.gif" />
                                  </image>
                                  <VBox.margin>
                                     <Insets left="20.0" top="10.0" />
@@ -218,7 +218,7 @@
                               <RadioButton fx:id="rb16" mnemonicParsing="false" text="Bag" toggleGroup="$group" />
                               <ImageView fitHeight="108.0" fitWidth="84.0" pickOnBounds="true">
                                  <image>
-                                    <Image url="@../../images/Bag.png" />
+                                    <Image url="@../../images/Bag.gif" />
                                  </image>
                                  <VBox.margin>
                                     <Insets top="10.0" />
@@ -231,7 +231,7 @@
                               <RadioButton fx:id="rb17" mnemonicParsing="false" text="Induction-CookTop" toggleGroup="$group" />
                               <ImageView fitHeight="110.0" fitWidth="105.0" pickOnBounds="true">
                                  <image>
-                                    <Image url="@../../images/Induction-CookTops.png" />
+                                    <Image url="@../../images/Induction-CookTops.gif" />
                                  </image>
                               </ImageView>
                            </children>
@@ -245,7 +245,7 @@
                               </RadioButton>
                               <ImageView fitHeight="99.0" fitWidth="94.0" pickOnBounds="true">
                                  <image>
-                                    <Image url="@../../images/Television.png" />
+                                    <Image url="@../../images/Television.gif" />
                                  </image>
                                  <VBox.margin>
                                     <Insets left="10.0" />
@@ -258,7 +258,7 @@
                               <RadioButton fx:id="rb19" mnemonicParsing="false" text="TongueCleaner" toggleGroup="$group" />
                               <ImageView fitHeight="99.0" fitWidth="109.0" pickOnBounds="true">
                                  <image>
-                                    <Image url="@../../images/TongueCleaner.png" />
+                                    <Image url="@../../images/TongueCleaner.gif" />
                                  </image>
                               </ImageView>
                            </children>
@@ -268,7 +268,7 @@
                               <RadioButton fx:id="rb20" mnemonicParsing="false" text="Earrings" toggleGroup="$group" />
                               <ImageView fitHeight="100.0" fitWidth="89.0" pickOnBounds="true">
                                  <image>
-                                    <Image url="@../../images/Earrings.png" />
+                                    <Image url="@../../images/Earrings.gif" />
                                  </image>
                                  <VBox.margin>
                                     <Insets left="10.0" />
@@ -281,7 +281,7 @@
                               <RadioButton fx:id="rb21" mnemonicParsing="false" text="Mobile" toggleGroup="$group" />
                               <ImageView fitHeight="90.0" fitWidth="56.0" pickOnBounds="true">
                                  <image>
-                                    <Image url="@../../images/Mobile.png" />
+                                    <Image url="@../../images/Mobile.gif" />
                                  </image>
                                  <VBox.margin>
                                     <Insets left="20.0" top="10.0" />
@@ -294,7 +294,7 @@
                               <RadioButton fx:id="rb22" mnemonicParsing="false" text="Gloves" toggleGroup="$group" />
                               <ImageView fitHeight="109.0" fitWidth="109.0" pickOnBounds="true">
                                  <image>
-                                    <Image url="@../../images/Gloves.png" />
+                                    <Image url="@../../images/Gloves.gif" />
                                  </image>
                               </ImageView>
                            </children>
@@ -304,7 +304,7 @@
                               <RadioButton fx:id="rb23" mnemonicParsing="false" text="Notebook" toggleGroup="$group" />
                               <ImageView fitHeight="98.0" fitWidth="79.0" pickOnBounds="true">
                                  <image>
-                                    <Image url="@../../images/Notebook.png" />
+                                    <Image url="@../../images/Notebook.gif" />
                                  </image>
                                  <VBox.margin>
                                     <Insets left="10.0" top="10.0" />
@@ -321,7 +321,7 @@
                               </RadioButton>
                               <ImageView fitHeight="90.0" fitWidth="88.0" pickOnBounds="true">
                                  <image>
-                                    <Image url="@../../images/Dress.png" />
+                                    <Image url="@../../images/Dress.gif" />
                                  </image>
                                  <VBox.margin>
                                     <Insets left="10.0" top="10.0" />
@@ -334,7 +334,7 @@
                               <RadioButton fx:id="rb25" mnemonicParsing="false" prefHeight="17.0" prefWidth="119.0" text="Mobile-BackCover" toggleGroup="$group" />
                               <ImageView fitHeight="82.0" fitWidth="91.0" pickOnBounds="true">
                                  <image>
-                                    <Image url="@../../images/Mobile-BackCover.png" />
+                                    <Image url="@../../images/Mobile-BackCover.gif" />
                                  </image>
                                  <VBox.margin>
                                     <Insets top="10.0" />
@@ -347,7 +347,7 @@
                               <RadioButton fx:id="rb26" mnemonicParsing="false" text="Sunglasses" toggleGroup="$group" />
                               <ImageView fitHeight="87.0" fitWidth="112.0" pickOnBounds="true">
                                  <image>
-                                    <Image url="@../../images/Sunglasses.png" />
+                                    <Image url="@../../images/Sunglasses.gif" />
                                  </image>
                               </ImageView>
                            </children>
@@ -357,7 +357,7 @@
                               <RadioButton fx:id="rb27" mnemonicParsing="false" text="Flower vase" toggleGroup="$group" />
                               <ImageView fitHeight="93.0" fitWidth="84.0" pickOnBounds="true">
                                  <image>
-                                    <Image url="@../../images/Flower%20vase.png" />
+                                    <Image url="@../../images/Flower%20vase.gif" />
                                  </image>
                                  <VBox.margin>
                                     <Insets top="10.0" />
@@ -370,7 +370,7 @@
                               <RadioButton fx:id="rb28" mnemonicParsing="false" text="Cushion" toggleGroup="$group" />
                               <ImageView fitHeight="84.0" fitWidth="82.0" pickOnBounds="true">
                                  <image>
-                                    <Image url="@../../images/Cushion.png" />
+                                    <Image url="@../../images/Cushion.gif" />
                                  </image>
                                  <VBox.margin>
                                     <Insets left="10.0" top="10.0" />
@@ -383,7 +383,7 @@
                               <RadioButton fx:id="rb29" mnemonicParsing="false" text="ToothBrush" toggleGroup="$group" />
                               <ImageView fitHeight="105.0" fitWidth="107.0" pickOnBounds="true">
                                  <image>
-                                    <Image url="@../../images/ToothBrush.png" />
+                                    <Image url="@../../images/ToothBrush.gif" />
                                  </image>
                                  <VBox.margin>
                                     <Insets top="10.0" />
@@ -396,7 +396,7 @@
                               <RadioButton fx:id="rb30" mnemonicParsing="false" text="StudyLamp" toggleGroup="$group" />
                               <ImageView fitHeight="101.0" fitWidth="81.0" pickOnBounds="true">
                                  <image>
-                                    <Image url="@../../images/StudyLamp.png" />
+                                    <Image url="@../../images/StudyLamp.gif" />
                                  </image>
                                  <VBox.margin>
                                     <Insets left="10.0" top="10.0" />
@@ -409,7 +409,7 @@
                               <RadioButton fx:id="rb31" mnemonicParsing="false" prefHeight="34.0" prefWidth="135.0" text="Knee-Guard" toggleGroup="$group" />
                               <ImageView fitHeight="100.0" fitWidth="109.0" pickOnBounds="true">
                                  <image>
-                                    <Image url="@../../images/Knee-Guard.png" />
+                                    <Image url="@../../images/Knee-Guard.gif" />
                                  </image>
                               </ImageView>
                            </children>
@@ -419,7 +419,7 @@
                               <RadioButton fx:id="rb32" mnemonicParsing="false" text="Blanket" toggleGroup="$group" />
                               <ImageView fitHeight="84.0" fitWidth="79.0" pickOnBounds="true">
                                  <image>
-                                    <Image url="@../../images/Blanket.png" />
+                                    <Image url="@../../images/Blanket.gif" />
                                  </image>
                                  <VBox.margin>
                                     <Insets left="10.0" top="10.0" />
@@ -432,7 +432,7 @@
                               <RadioButton fx:id="rb33" mnemonicParsing="false" text="Helmet" toggleGroup="$group" />
                               <ImageView fitHeight="79.0" fitWidth="102.0" pickOnBounds="true">
                                  <image>
-                                    <Image url="@../../images/Helmet.png" />
+                                    <Image url="@../../images/Helmet.gif" />
                                  </image>
                               </ImageView>
                            </children>
@@ -442,7 +442,7 @@
                               <RadioButton fx:id="rb34" mnemonicParsing="false" text="Cricket-Bat" toggleGroup="$group" />
                               <ImageView fitHeight="93.0" fitWidth="92.0" pickOnBounds="true">
                                  <image>
-                                    <Image url="@../../images/Cricket-Bat.png" />
+                                    <Image url="@../../images/Cricket-Bat.gif" />
                                  </image>
                               </ImageView>
                            </children>
@@ -452,7 +452,7 @@
                               <RadioButton fx:id="rb35" mnemonicParsing="false" text="Bedsheet" toggleGroup="$group" />
                               <ImageView fitHeight="114.0" fitWidth="113.0" pickOnBounds="true">
                                  <image>
-                                    <Image url="@../../images/Bedsheet.png" />
+                                    <Image url="@../../images/Bedsheet.gif" />
                                  </image>
                               </ImageView>
                            </children>
@@ -462,7 +462,7 @@
                               <RadioButton fx:id="rb36" mnemonicParsing="false" text="Blazer" toggleGroup="$group" />
                               <ImageView fitHeight="106.0" fitWidth="101.0" pickOnBounds="true">
                                  <image>
-                                    <Image url="@../../images/Blazer.png" />
+                                    <Image url="@../../images/Blazer.gif" />
                                  </image>
                               </ImageView>
                            </children>
@@ -472,7 +472,7 @@
                               <RadioButton fx:id="rb37" mnemonicParsing="false" text="WomenHeels" toggleGroup="$group" />
                               <ImageView fitHeight="95.0" fitWidth="92.0" pickOnBounds="true">
                                  <image>
-                                    <Image url="@../../images/WomenHeels.png" />
+                                    <Image url="@../../images/WomenHeels.gif" />
                                  </image>
                               </ImageView>
                            </children>
@@ -482,7 +482,7 @@
                               <RadioButton fx:id="rb38" mnemonicParsing="false" text="Pens" toggleGroup="$group" />
                               <ImageView fitHeight="100.0" fitWidth="89.0" pickOnBounds="true">
                                  <image>
-                                    <Image url="@../../images/Pens.png" />
+                                    <Image url="@../../images/Pens.gif" />
                                  </image>
                               </ImageView>
                            </children>
@@ -492,7 +492,7 @@
                               <RadioButton fx:id="rb39" mnemonicParsing="false" text="Belt" toggleGroup="$group" />
                               <ImageView fitHeight="74.0" fitWidth="93.0" pickOnBounds="true">
                                  <image>
-                                    <Image url="@../../images/Belt.png" />
+                                    <Image url="@../../images/Belt.gif" />
                                  </image>
                                  <VBox.margin>
                                     <Insets left="10.0" top="10.0" />
@@ -505,7 +505,7 @@
                               <RadioButton fx:id="rb40" mnemonicParsing="false" text="LaptopSkin" toggleGroup="$group" />
                               <ImageView fitHeight="106.0" fitWidth="103.0" pickOnBounds="true">
                                  <image>
-                                    <Image url="@../../images/LaptopSkin.png" />
+                                    <Image url="@../../images/LaptopSkin.gif" />
                                  </image>
                               </ImageView>
                            </children>
@@ -515,7 +515,7 @@
                               <RadioButton fx:id="rb41" mnemonicParsing="false" text="WirelessMouse" toggleGroup="$group" />
                               <ImageView fitHeight="96.0" fitWidth="95.0" pickOnBounds="true">
                                  <image>
-                                    <Image url="@../../images/WirelessMouse.png" />
+                                    <Image url="@../../images/WirelessMouse.gif" />
                                  </image>
                               </ImageView>
                            </children>
@@ -525,7 +525,7 @@
                               <RadioButton fx:id="rb42" mnemonicParsing="false" text="Laptop" toggleGroup="$group" />
                               <ImageView fitHeight="86.0" fitWidth="94.0" pickOnBounds="true">
                                  <image>
-                                    <Image url="@../../images/Laptop.png" />
+                                    <Image url="@../../images/Laptop.gif" />
                                  </image>
                               </ImageView>
                            </children>
@@ -535,7 +535,7 @@
                               <RadioButton fx:id="rb43" mnemonicParsing="false" text="Pendrive" toggleGroup="$group" />
                               <ImageView fitHeight="96.0" fitWidth="89.0" pickOnBounds="true">
                                  <image>
-                                    <Image url="@../../images/Pendrive.png" />
+                                    <Image url="@../../images/Pendrive.gif" />
                                  </image>
                                  <VBox.margin>
                                     <Insets left="10.0" top="10.0" />
@@ -548,7 +548,7 @@
                               <RadioButton fx:id="rb44" mnemonicParsing="false" text="Tie" toggleGroup="$group" />
                               <ImageView fitHeight="108.0" fitWidth="50.0" pickOnBounds="true">
                                  <image>
-                                    <Image url="@../../images/Tie.png" />
+                                    <Image url="@../../images/Tie.gif" />
                                  </image>
                                  <VBox.margin>
                                     <Insets left="20.0" />
@@ -561,7 +561,7 @@
                               <RadioButton fx:id="rb45" mnemonicParsing="false" text="Socks" toggleGroup="$group" />
                               <ImageView fitHeight="94.0" fitWidth="69.0" pickOnBounds="true">
                                  <image>
-                                    <Image url="@../../images/Socks.png" />
+                                    <Image url="@../../images/Socks.gif" />
                                  </image>
                                  <VBox.margin>
                                     <Insets left="10.0" top="10.0" />
@@ -574,7 +574,7 @@
                               <RadioButton fx:id="rb46" mnemonicParsing="false" text="T-Shirt" toggleGroup="$group" />
                               <ImageView fitHeight="114.0" fitWidth="118.0" pickOnBounds="true">
                                  <image>
-                                    <Image url="@../../images/T-shirt.png" />
+                                    <Image url="@../../images/T-shirt.gif" />
                                  </image>
                               </ImageView>
                            </children>
@@ -584,7 +584,7 @@
                               <RadioButton fx:id="rb47" mnemonicParsing="false" prefHeight="17.0" prefWidth="104.0" text="Headphones" toggleGroup="$group" />
                               <ImageView fitHeight="90.0" fitWidth="81.0" pickOnBounds="true">
                                  <image>
-                                    <Image url="@../../images/Headphones.png" />
+                                    <Image url="@../../images/Headphones.gif" />
                                  </image>
                               </ImageView>
                            </children>
@@ -594,7 +594,7 @@
                               <RadioButton fx:id="rb48" mnemonicParsing="false" text="Shoes" toggleGroup="$group" />
                               <ImageView fitHeight="97.0" fitWidth="77.0" pickOnBounds="true">
                                  <image>
-                                    <Image url="@../../images/Shoes.png" />
+                                    <Image url="@../../images/Shoes.gif" />
                                  </image>
                               </ImageView>
                            </children>
@@ -604,7 +604,7 @@
                               <RadioButton fx:id="rb49" mnemonicParsing="false" text="Watch" toggleGroup="$group" />
                               <ImageView fitHeight="98.0" fitWidth="86.0" pickOnBounds="true">
                                  <image>
-                                    <Image url="@../../images/Watch.png" />
+                                    <Image url="@../../images/Watch.gif" />
                                  </image>
                               </ImageView>
                            </children>
@@ -614,7 +614,7 @@
                               <RadioButton fx:id="rb50" mnemonicParsing="false" text="BasketBall" toggleGroup="$group" />
                               <ImageView fitHeight="82.0" fitWidth="80.0" pickOnBounds="true">
                                  <image>
-                                    <Image url="@../../images/BasketBall.png" />
+                                    <Image url="@../../images/BasketBall.gif" />
                                  </image>
                               </ImageView>
                            </children>

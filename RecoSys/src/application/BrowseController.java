@@ -76,6 +76,10 @@ public class BrowseController {
 	final ToggleGroup group = new ToggleGroup();
 	 
 
+	   private void closeStage() 
+	    {
+	      ((Stage) doneButton.getScene().getWindow()).close();
+	    }
 	@FXML
     protected void BrowseButtonAction(ActionEvent event) throws FileNotFoundException {
 		
@@ -402,7 +406,7 @@ public class BrowseController {
 			
 			
 			welcomeController.sendProduct(i,StartController.welcome_name);
-
+			closeStage();
 	        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
 	        Scene scene2 = new Scene(root1);
 	        window.setScene(scene2);
