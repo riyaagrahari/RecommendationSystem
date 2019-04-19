@@ -71,9 +71,11 @@ public class BrowseController {
 	 @FXML private RadioButton rb48;
 	 @FXML private RadioButton rb49;
 	 @FXML private RadioButton rb50;
+	 
 	 @FXML
 	final ToggleGroup group = new ToggleGroup();
-//	 StartController ob = new StartController();
+	 
+
 	@FXML
     protected void BrowseButtonAction(ActionEvent event) throws FileNotFoundException {
 		

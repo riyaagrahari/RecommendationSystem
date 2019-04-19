@@ -36,7 +36,11 @@
                      <children>
                         <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="4" GridPane.rowIndex="9">
                            <children>
-                              <RadioButton fx:id="rb1" mnemonicParsing="false" text="TableCloth" toggleGroup="$group" />
+                              <RadioButton fx:id="rb1" mnemonicParsing="false" text="TableCloth" >
+                              <toggleGroup>
+                                    <ToggleGroup fx:id="group" />
+                                 </toggleGroup>
+                                </RadioButton>
                               <ImageView fitHeight="95.0" fitWidth="117.0" pickOnBounds="true">
                                  <image>
                                     <Image url="@../../images/TableCloth.png" />

@@ -49,7 +49,7 @@ public class WelcomeController {
     String item;
     public static ObservableList<String> items;
     ArrayList<String> Item = new ArrayList<String>();
-    public static final String[] ItemUnique = {"Shoes","BasketBall","HeadPhones","Watch","WirelessMouse","T-Shirt","Tie","Socks","Pendrive","Laptop","Belt","LaptopSkin","Pens","WomenHeels","Blazer","Bedsheet","Cricket-Bat","Helmet","Blanket","Knee-Guard","StudyLamp","Toothbrush","Cushion","Flower vase","Sunglasses","Mobile-BackCover","Dress","Notebook","Gloves","Mobile","Earrings","Chair","Wallet","Perfumes","ToothPaste","Air-Conditioner","Bottle","FashWash","Pencil","Table","Induction-CookTops","Television","TongueCleaner","Cricket-Ball","Induction-Cookware","Tempered Glass","Bag","Purse","Soap","TableCloth"};
+    public static final String[] ItemUnique = {"Shoes","BasketBall","Headphones","Watch","WirelessMouse","T-Shirt","Tie","Socks","Pendrive","Laptop","Belt","LaptopSkin","Pens","WomenHeels","Blazer","Bedsheet","Cricket-Bat","Helmet","Blanket","Knee-Guard","StudyLamp","Toothbrush","Cushion","Flower vase","Sunglasses","Mobile-BackCover","Dress","Notebook","Gloves","Mobile","Earrings","Chair","Wallet","Perfumes","ToothPaste","Air-Conditioner","Bottle","FashWash","Pencil","Table","Induction-CookTops","Television","TongueCleaner","Cricket-Ball","Induction-Cookware","Tempered Glass","Bag","Purse","Soap","TableCloth"};
     
     @FXML
     private Button logout;
@@ -103,9 +103,9 @@ try{
 	con = (Connection) DBConnector.getConnection();
 	stmt= (Statement) con.createStatement();
 	System.out.println(selected_item);
-	for(int i =0;i<15;i++)
+	for(int i =0;i<50;i++)
 	{
-		 if(ItemUnique[i].equals(selected_item))
+		 if(ItemUnique[i].equals(selected_item) || StartController.itemList.contains(ItemUnique[i]))
 		 continue;
 		 else
 		 {
