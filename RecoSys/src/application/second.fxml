@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.paint.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.control.*?>
@@ -30,8 +31,8 @@
          </font>
       </Button>
      
-      <ListView fx:id="listView" layoutX="190.0" layoutY="153.0" prefHeight="215.0" prefWidth="299.0" />
-      <Label layoutX="271.0" layoutY="121.0" text="Items in The Cart" textAlignment="CENTER">
+      <ListView fx:id="listView" layoutX="203.0" layoutY="153.0" prefHeight="204.0" prefWidth="286.0" />
+      <Label layoutX="287.0" layoutY="121.0" text="Items in The Cart" textAlignment="CENTER">
          <font>
             <Font name="Comic Sans MS" size="14.0" />
          </font>
@@ -41,17 +42,17 @@
             <Font size="14.0" />
          </font>
       </Button>
-      <Label fx:id="recommend" alignment="CENTER" contentDisplay="CENTER" layoutX="256.0" layoutY="556.0" prefHeight="25.0" prefWidth="148.0" text=" " textAlignment="RIGHT" textFill="#150f5b">
+      <Label fx:id="recommend" alignment="CENTER" contentDisplay="CENTER" layoutX="255.0" layoutY="391.0" prefHeight="28.0" prefWidth="196.0" textFill="#e12016" wrapText="true">
          <font>
-            <Font name="Comic Sans MS" size="16.0" />
+            <Font name="Georgia" size="16.0" />
          </font>
       </Label>
-      <Label fx:id="text_recommend" alignment="CENTER" contentDisplay="CENTER" layoutX="33.0" layoutY="388.0" prefHeight="28.0" prefWidth="666.0" textAlignment="CENTER" textFill="#150f5b" wrapText="true">
+      <Label fx:id="text_recommend" alignment="CENTER" contentDisplay="CENTER" layoutX="9.0" layoutY="357.0" prefHeight="34.0" prefWidth="712.0" textAlignment="RIGHT" textFill="#150f5b" wrapText="true">
          <font>
-            <Font name="Comic Sans MS Bold" size="20.0" />
+            <Font name="Georgia" size="16.0" />
          </font>
       </Label>
-      <ImageView fx:id="item_img" fitHeight="120.0" fitWidth="148.0" layoutX="266.0" layoutY="429.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="item_img" fitHeight="120.0" fitWidth="148.0" layoutX="523.0" layoutY="427.0" pickOnBounds="true" preserveRatio="true" />
       <ImageView fitHeight="71.0" fitWidth="141.0" layoutX="17.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../images/logo_general.png" />
@@ -62,6 +63,18 @@
             <Image url="@../../images/ShoppingCart2.png" />
          </image>
       </ImageView>
+      <ImageView fx:id="item_img1" fitHeight="120.0" fitWidth="141.0" layoutX="340.0" layoutY="427.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="item_img2" fitHeight="120.0" fitWidth="166.0" layoutX="172.0" layoutY="427.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="plus2" layoutX="292.0" layoutY="479.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="plus1" layoutX="483.0" layoutY="483.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
      
    </children>
 </AnchorPane>

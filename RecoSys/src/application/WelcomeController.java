@@ -58,15 +58,25 @@ public class WelcomeController {
     @FXML
     private Button checkout;
     @FXML
-    ImageView item_img; 
+    ImageView item_img;
+    @FXML
+    ImageView item_img1;
+    @FXML
+    ImageView item_img2;
     @FXML private ListView<String> listView;
     static String userName;
     @FXML
     private Label recommend;
     @FXML
     private Label text_recommend;
+    @FXML
+    private Label plus1;
+    @FXML
+    private Label plus2;
     
     String Item_url= "C:/Users/Riya Agrahari/git/RecoSys/images/";
+    String Item1_url= "C:/Users/Riya Agrahari/git/RecoSys/images/";
+    String Item2_url= "C:/Users/Riya Agrahari/git/RecoSys/images/";
     public void sendMessage(String message, String name) {
         //Display the message
     	userName=message;
@@ -185,11 +195,18 @@ try{
 	text_recommend.setText("People who bought "+selected_item+" also bought :");
 	Item_url = Item_url + suggest+".gif"; 
 	recommend.setText(suggest);
+	Item1_url = Item1_url + selected_item +".gif";
 	
 	File file = new File(Item_url);
 	System.out.println(Item_url);
- Image image = new Image(file.toURI().toString());
- item_img.setImage(image);
+	Image image = new Image(file.toURI().toString());
+	item_img.setImage(image);
+	File file1 = new File(Item1_url);
+	System.out.println(Item1_url);
+	Image image1 = new Image(file1.toURI().toString());
+	item_img1.setImage(image1);
+	plus1.setText("+");
+	plus2.setText("");
 	}
 	if (s == "" && listView.getItems() != null)
 	{
@@ -293,14 +310,29 @@ try{
 	if (s != "" && listView.getItems() != null)
 	{
 		int l= StartController.itemList.size();
-	text_recommend.setText("People who bought "+selected_item+" and "+( StartController.itemList.get(l-2).toString())+" also bought :");
+		String item2 = StartController.itemList.get(l-2).toString();
+	text_recommend.setText("People who bought "+selected_item+" and "+item2+" also bought :");
 	Item_url = Item_url + suggest+".gif"; 
 	recommend.setText(suggest);
+	Item1_url = Item1_url + selected_item +".gif";
+	Item2_url = Item2_url + item2+".gif";
 	
+	plus1.setText("+");
+	plus2.setText("+");
 	File file = new File(Item_url);
 	System.out.println(Item_url);
  Image image = new Image(file.toURI().toString());
  item_img.setImage(image);
+ 
+ File file1 = new File(Item1_url);
+	System.out.println(Item1_url);
+Image image1 = new Image(file1.toURI().toString());
+item_img1.setImage(image1);
+
+File file2 = new File(Item2_url);
+System.out.println(Item2_url);
+Image image2 = new Image(file2.toURI().toString());
+item_img2.setImage(image2);
 	}
 	if (s == "" && listView.getItems() != null)
 	{
