@@ -32,7 +32,7 @@
       </Button>
      
       <ListView fx:id="listView" layoutX="203.0" layoutY="153.0" prefHeight="204.0" prefWidth="286.0" />
-      <Label layoutX="287.0" layoutY="121.0" text="Items in The Cart" textAlignment="CENTER">
+      <Label fx:id="tag" layoutX="287.0" layoutY="121.0" text="Items in The Cart" textAlignment="CENTER">
          <font>
             <Font name="Comic Sans MS" size="14.0" />
          </font>

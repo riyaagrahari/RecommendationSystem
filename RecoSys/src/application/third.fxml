@@ -228,7 +228,7 @@
                         </VBox>
                         <VBox prefHeight="133.0" prefWidth="121.0" GridPane.rowIndex="8">
                            <children>
-                              <RadioButton fx:id="rb17" mnemonicParsing="false" text="Induction-CookTop" toggleGroup="$group" />
+                              <RadioButton fx:id="rb17" mnemonicParsing="false" text="Induction-CookTops" toggleGroup="$group" />
                               <ImageView fitHeight="110.0" fitWidth="105.0" pickOnBounds="true">
                                  <image>
                                     <Image url="@../../images/Induction-CookTops.gif" />

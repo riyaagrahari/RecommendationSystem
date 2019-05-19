@@ -54,7 +54,7 @@ public class WelcomeController {
     
     @FXML
     private Button logout;
-    private String selected_item="";
+    private String selected_item;
     @FXML
     private Button checkout;
     @FXML
@@ -73,7 +73,9 @@ public class WelcomeController {
     private Label plus1;
     @FXML
     private Label plus2;
-    
+    @FXML
+    private Label tag;
+    ArrayList<String> transactionArray;
     String Item_url= "C:/Users/Riya Agrahari/git/RecoSys/images/";
     String Item1_url= "C:/Users/Riya Agrahari/git/RecoSys/images/";
     String Item2_url= "C:/Users/Riya Agrahari/git/RecoSys/images/";
@@ -91,21 +93,82 @@ public class WelcomeController {
         try{
         	con = (Connection) DBConnector.getConnection();
         	stmt= (Statement) con.createStatement();
-        	rs = stmt.executeQuery("Select `cartItems` from `recosys`.`userlogin` where userName like'%" + userName + "%' "); 
+        	rs = stmt.executeQuery("Select `CartItems` from `recosys`.`userlogin` where userName like'%" + userName + "%' "); 
+        	//rs.next();
+        	System.out.println(rs.next());
+        	//System.out.println(rs.next());
+        	do{
+    		    oldCart = rs.getString("CartItems");
+    		    System.out.println(oldCart);
+    		    if(oldCart == null)
+    		    {
+    		    	transaction();
+    		    }
+    		    }while(rs.next());
+    	 oldCart = oldCart.substring(1);
+    	 System.out.println(oldCart);
+    	 oldCart = oldCart.substring(0, oldCart.length() - 1);
+    	 System.out.println(oldCart);
+    	 String[] ary = oldCart.split(",");
+    	 for (int i = 0; i < ary.length; i++)
+    		    ary[i] = ary[i].trim();
+    	 System.out.println(ary);
+    	 int l =ary.length;
+    	 
+    	 StartController.itemList = new ArrayList<String>(Arrays.asList(ary));
+        	items = listView.getItems();
+        	 	
+        	 System.out.println(StartController.itemList);
+        	 if(l == 0)
+        	 {
+        		 transaction();
+        	 // call transaction function to suggest recommedation as per transaction 
+        	 }
+        	 else if(l == 1)
+        	 {
+        		 selected_item = ary[0];
+        		twoChecker(ary[0],true);
+        	 }
+        	 else
+        	 {
+        		 selected_item = ary[l-1];
+        		 threeChecker(ary[l-1]);
+        	 }
+        	
+        }catch (Exception e){
+        	System.out.println(e);
+        }
+    }
+    
+    public void transaction()
+    {
+    	System.out.println("Hi Transaction");
+    	Connection con = null;
+     	Statement stmt = null;
+     	ResultSet rs = null;
+     	String oldCart = "";
+        try{
+        	con = (Connection) DBConnector.getConnection();
+        	stmt= (Statement) con.createStatement();
+        	rs = stmt.executeQuery("Select `Transaction` from `recosys`.`userlogin` where userName like'%" + userName + "%' "); 
         	 while(rs.next()){
-        		    oldCart = rs.getString("cartItems");
+        		    oldCart = rs.getString("Transaction");
         		    }
         	 oldCart = oldCart.substring(1);
         	 System.out.println(oldCart);
         	 oldCart = oldCart.substring(0, oldCart.length() - 1);
         	 System.out.println(oldCart);
         	 String[] ary = oldCart.split(",");
+        	 //System.out.println(ary);
         	 for (int i = 0; i < ary.length; i++)
-        		    ary[i] = ary[i].trim();
-        	 System.out.println(ary);
-        	 StartController.itemList = new ArrayList<String>(Arrays.asList(ary));
-        	 items = listView.getItems();
-        	 	for(int i=0;i<StartController.itemList.size();i++)
+        	 { ary[i] = ary[i].trim();
+        	 System.out.println("arry List"+ary[i]);
+        	 }
+        	 int l =ary.length;
+        	 
+        	 transactionArray = new ArrayList<String>(Arrays.asList(ary));
+        	// items = listView.getItems();
+        	 	/*for(int i=0;i<StartController.itemList.size();i++)
         	 	{
         	 		String it = StartController.itemList.get(i);
         	 		//if(flag == true)
@@ -113,15 +176,28 @@ public class WelcomeController {
         	 		
         	 		//listView.getItems().clear();
         	 		
-        	 	}
-        	 System.out.println(StartController.itemList);
+        	 	}*/
+        	 System.out.println("ItemList="+StartController.itemList);
+        	 if(l == 0)
+        	 {
+        		System.out.println("Kuch Nahi kharida abhi tak!");
+        	 // call transaction function to suggest recommedation as per transaction 
+        	 }
+        	 else if(l == 1)
+        	 {
+        		 selected_item = ary[0];
+        		twoCheckerTransaction(ary[0],true);
+        	 }
+        	 else
+        	 {
+        		 selected_item = ary[l-1];
+        		 threeCheckerTransaction(ary[l-1]);
+        	 }
         	
         }catch (Exception e){
         	System.out.println(e);
         }
     }
-    
-    
     public void sendProduct(String s, String m) throws FileNotFoundException {
         selected_item=s;
       
@@ -138,6 +214,7 @@ public class WelcomeController {
 // Two Combination Checker
     public void twoChecker(String s, Boolean flag)
     {
+    	
     	 if (s == "" && listView.getItems() == null)
      	{text_recommend.setText("Looks like your cart is empty! Check out our most popular item");
      	 text_recommend.setTextFill(Color.web("#ff0000"));
@@ -188,7 +265,7 @@ try{
 	}
 	}
 
- 
+	
 	System.out.println("Suggested Item: "+suggest);
 	if (s != "" && listView.getItems() != null)
 	{
@@ -239,6 +316,113 @@ finally{
 	}
 	}
     }
+    
+    
+    public void twoCheckerTransaction(String s, Boolean flag)
+    {
+    	
+    	 if (s == "" && listView.getItems() == null)
+     	{text_recommend.setText("Looks like your cart is empty! Check out our most popular item");
+     	 text_recommend.setTextFill(Color.web("#ff0000"));
+     	}
+     	
+ 	 items = listView.getItems();
+ 	/*for(int i=0;i<transactionArray.size();i++)
+ 	{
+ 		String it = transactionArray.get(i);
+ 		if(flag == true)
+ 		items.add(it);
+ 		
+ 		//listView.getItems().clear();
+ 		
+ 	}*/
+ 	display.setText(userName);
+ 	
+
+ 	Connection con = null;
+ 	Statement stmt = null;
+ 	ResultSet rs = null;
+ 	int max=0;
+ 	String suggest="";
+ 	int x=0;
+try{
+	con = (Connection) DBConnector.getConnection();
+	stmt= (Statement) con.createStatement();
+	System.out.println(selected_item);
+	for(int i =0;i<50;i++)
+	{
+		 if(ItemUnique[i].equals(selected_item) ||transactionArray.contains(ItemUnique[i]))
+		 continue;
+		 else
+		 {
+ rs = stmt.executeQuery("Select count(*) from `recosys`.`items` where items like'%" + selected_item + "%' and items like '%"+ ItemUnique[i] + "%'"); 
+ 
+		 while(rs.next()){
+	    x = rs.getInt("COUNT(*)");	
+	    
+	    System.out.println(ItemUnique[i]+" "+selected_item+" "+x);
+	  }
+// x = rs.getInt("total");
+
+ if (x>max)
+ 	{max=x;
+ 	 suggest=ItemUnique[i];
+ 	}
+	}
+	}
+
+	
+	System.out.println("Suggested Item: "+suggest);
+	if (s != "" && listView.getItems() != null)
+	{
+	text_recommend.setText("You last bought. "+selected_item+" You may also like :");
+	Item_url = Item_url + suggest+".gif"; 
+	recommend.setText(suggest);
+	Item1_url = Item1_url + selected_item +".gif";
+	
+	File file = new File(Item_url);
+	System.out.println(Item_url);
+	Image image = new Image(file.toURI().toString());
+	item_img.setImage(image);
+	File file1 = new File(Item1_url);
+	System.out.println(Item1_url);
+	Image image1 = new Image(file1.toURI().toString());
+	item_img1.setImage(image1);
+	plus1.setText("+");
+	plus2.setText("");
+	}
+	if (s == "" && listView.getItems() != null)
+	{
+	text_recommend.setText("Looks like you didn't select anything. Have a look at our most popular item");
+	Item_url = Item_url + suggest+".gif"; 
+	recommend.setText(suggest);
+	text_recommend.setTextFill(Color.web("#ff0000"));
+	text_recommend.setFont(new Font("Comic Sans MS", 18));
+	
+	File file = new File(Item_url);
+	System.out.println(Item_url);
+ Image image = new Image(file.toURI().toString());
+ item_img.setImage(image);
+	}
+	//Image image = new Image(new FileInputStream(Item_url));
+	//item_img.setImage(Item_url);
+	
+// 	while(rs.next())  
+// 	System.out.println(rs.getInt(1)+"  "+rs.getString(2)+"  ");  
+}
+catch(SQLException e){
+	e.printStackTrace();
+}
+finally{
+	try{
+ 	con.close();  
+	}
+	catch(SQLException e){
+		e.printStackTrace();
+	}
+	}
+    }
+    
     
     
     
@@ -368,7 +552,128 @@ finally{
     
     
     
-    
+    public void threeCheckerTransaction(String s)
+    {
+    	 if (s == "" && listView.getItems() == null)
+     	{text_recommend.setText("Looks like your cart is empty! Check out our most popular item");
+     	 text_recommend.setTextFill(Color.web("#ff0000"));
+     	}
+     	
+ 	 items = listView.getItems();
+ 	/*for(int i=0;i<transactionArray.size();i++)
+ 	{
+ 		String it = transactionArray.get(i);
+ 		items.add(it);
+ 		
+ 		//listView.getItems().clear();
+ 		
+ 	}*/
+ 	
+ 	display.setText(userName);
+ 	
+
+ 	Connection con = null;
+ 	Statement stmt = null;
+ 	ResultSet rs = null;
+ 	int max=0;
+ 	String suggest="";
+ 	int x=0;
+try{
+	con = (Connection) DBConnector.getConnection();
+	stmt= (Statement) con.createStatement();
+	System.out.println(selected_item);
+	for(int i =0;i<50;i++)
+	{
+		 if(ItemUnique[i].equals(selected_item) ||transactionArray.contains(ItemUnique[i]))
+		 continue;
+		 else
+		 {
+			 int l = transactionArray.size();
+			 String item1 = transactionArray.get(l-2).toString();
+			// String item2 = StartController.itemList.get(size).toString();
+			 
+ rs = stmt.executeQuery("Select count(*) from `recosys`.`items` where items like'%" + selected_item + "%' and items like'%" + item1 + "%' and items like '%"+ ItemUnique[i] + "%'"); 
+ 
+		 while(rs.next()){
+	    x = rs.getInt("COUNT(*)");	
+	    
+	    System.out.println(ItemUnique[i]+" "+selected_item+" "+item1+ " " +x);
+	  }
+// x = rs.getInt("total");
+
+ if (x>max)
+ 	{max=x;
+ 	 suggest=ItemUnique[i];
+ 	}
+ 
+	}
+	}
+	
+	if(max == 0){twoChecker(s,false);}
+		
+	else
+	{
+
+ 
+	System.out.println("Suggested Item: "+suggest);
+	if (s != "" && listView.getItems() != null)
+	{
+		int l=transactionArray.size();
+		String item2 = transactionArray.get(l-2).toString();
+	text_recommend.setText("You last bought. "+selected_item+" and "+item2+" You may also like :");
+	Item_url = Item_url + suggest+".gif"; 
+	recommend.setText(suggest);
+	Item1_url = Item1_url + selected_item +".gif";
+	Item2_url = Item2_url + item2 +".gif";
+	
+	plus1.setText("+");
+	plus2.setText("+");
+	File file = new File(Item_url);
+	System.out.println(Item_url);
+ Image image = new Image(file.toURI().toString());
+ item_img.setImage(image);
+ 
+ File file1 = new File(Item1_url);
+	System.out.println(Item1_url);
+Image image1 = new Image(file1.toURI().toString());
+item_img1.setImage(image1);
+
+File file2 = new File(Item2_url);
+System.out.println(Item2_url);
+Image image2 = new Image(file2.toURI().toString());
+item_img2.setImage(image2);
+	}
+	if (s == "" && listView.getItems() != null)
+	{
+	text_recommend.setText("Looks like you didn't select anything. Have a look at our most popular item");
+	Item_url = Item_url + suggest+".gif"; 
+	recommend.setText(suggest);
+	text_recommend.setTextFill(Color.web("#ff0000"));
+	text_recommend.setFont(new Font("Comic Sans MS", 18));
+	
+	File file = new File(Item_url);
+	System.out.println(Item_url);
+ Image image = new Image(file.toURI().toString());
+ item_img.setImage(image);
+	}
+	//Image image = new Image(new FileInputStream(Item_url));
+	//item_img.setImage(Item_url);
+	
+// 	while(rs.next())  
+// 	System.out.println(rs.getInt(1)+"  "+rs.getString(2)+"  ");  
+}}
+catch(SQLException e){
+	e.printStackTrace();
+}
+finally{
+	try{
+ 	con.close();  
+	}
+	catch(SQLException e){
+		e.printStackTrace();
+	}
+	}
+    }  
     
     
     
@@ -391,9 +696,15 @@ finally{
      	Connection con = null;
      	Statement stmt = null;
      	ResultSet rs = null;
-     
-    	String query = "UPDATE `recosys`.`userlogin` SET `CartItems` = '"+StartController.itemList+"' WHERE (`UserName` = '"+userName+"')";
-    	//UPDATE `recosys`.`userlogin` SET `CartItems` = '[Shoes, FaceWash,Pens]' WHERE (`UserName` = 'segdh');
+        String query;
+        System.out.println(StartController.itemList);
+     	if(StartController.itemList.isEmpty()){
+    		query = "UPDATE `recosys`.`userlogin` SET `CartItems` = NULL WHERE (`UserName` = '"+userName+"')";
+    	}else{
+    		query = "UPDATE `recosys`.`userlogin` SET `CartItems` = '"+StartController.itemList+"' WHERE (`UserName` = '"+userName+"')";
+    	}
+    	
+    	
 try{
 	con = (Connection) DBConnector.getConnection();
 	stmt= (Statement) con.createStatement();
@@ -447,7 +758,13 @@ catch(SQLException e){
 
     	Connection con = null;
     	Statement stmt = null;
-    	String query = "INSERT INTO `recosys`.`items` (`items`) VALUES ('"+StartController.itemList+"')";
+    	String query;
+    	if(StartController.itemList.isEmpty()){
+    		query = "INSERT INTO `recosys`.`items` (`items`) VALUES (NULL)";
+    	}else{
+    		query = "INSERT INTO `recosys`.`items` (`items`) VALUES ('"+StartController.itemList+"')";
+    	}
+    	
     	
 try{
 	con = (Connection) DBConnector.getConnection();
@@ -467,9 +784,21 @@ finally{
 		e.printStackTrace();
 	}
 	}
-    	StartController.itemList.clear();
+
+try {
+	con = (Connection) DBConnector.getConnection();
+	stmt= (Statement) con.createStatement();
+	String query2 = "UPDATE `recosys`.`userlogin` SET `Transaction` = '"+StartController.itemList+"' WHERE (`UserName` = '"+userName+"')";
+	String query3 = "UPDATE `recosys`.`userlogin` SET `CartItems` = NULL WHERE (`UserName` = '"+userName+"')";
+	stmt.executeUpdate(query2); 
+	stmt.executeUpdate(query3); 
+} catch (SQLException e) {
+	// TODO Auto-generated catch block
+	e.printStackTrace();
+}
+ 
+		StartController.itemList.clear();
     	listView.getItems().clear();
-    	
     	text_recommend.setText("");
     	recommend.setText("");
     	Item_url="";
@@ -477,5 +806,18 @@ finally{
     	System.out.println(Item_url);
         Image image = new Image(file.toURI().toString());
         item_img.setImage(image);
+        Item1_url="";
+    	File file1 = new File(Item1_url);
+    	System.out.println(Item1_url);
+        Image image1 = new Image(file1.toURI().toString());
+        item_img1.setImage(image1);
+        Item2_url="";
+    	File file2 = new File(Item2_url);
+    	System.out.println(Item2_url);
+        Image image2 = new Image(file2.toURI().toString());
+        item_img2.setImage(image2);
+        plus1.setText("");
+    	plus2.setText("");
+        
 }
 }
